@@ -94,6 +94,10 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .sd th, .sd td { text-align: left; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: middle; white-space: nowrap; }
 .sd th { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); position: sticky; top: 0; background: var(--color-panel); z-index: 1; }
 .sd th.n, .sd td.n { text-align: right; }
+.sd { position: relative; }
+.sd .sd-thl { border-bottom: 1px dotted currentColor; cursor: help; }
+.sd .sd-thl:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.sd-htip { position: absolute; z-index: 5; max-width: min(20rem, calc(100% - 1rem)); pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); line-height: 1.45; color: var(--color-fg); font-weight: 400; text-transform: none; white-space: normal; }
 .sd th button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
 .sd th[aria-sort="ascending"] button::after { content: " ↑"; }
 .sd th[aria-sort="descending"] button::after { content: " ↓"; }
@@ -211,12 +215,12 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
           <thead><tr>
             <th data-field="city">Напрямок</th>
             <th data-field="country">Країна</th>
-            <th class="n" data-field="requests">Запити</th>
-            <th class="n" data-field="bookings">Броні</th>
-            <th class="n" data-field="conversion">Конверсія</th>
-            <th data-field="spring_status">Весна</th>
-            <th data-field="summer_status">Літо</th>
-            <th data-field="autumn_status">Осінь</th>
+            <th class="n" data-field="requests" data-tip="Скільки різних поїздок шукали агенти: агент + дата заїзду. Повторні пошуки тієї самої поїздки рахуються один раз."><span class="sd-thl" tabindex="0">Запити (поїздки)</span></th>
+            <th class="n" data-field="bookings" data-tip="Скільки замовлень оформили. Кожне замовлення рахуємо один раз."><span class="sd-thl" tabindex="0">Броні</span></th>
+            <th class="n" data-field="conversion" data-tip="Броні, поділені на запити: яка частка поїздок, які шукали, закінчилася бронюванням."><span class="sd-thl" tabindex="0">Конверсія</span></th>
+            <th data-field="spring_status" data-tip="Оцінка сезону: Сильний, Середній, Низький або Замало даних. Правила — у блоці «Статус у сезоні» вгорі."><span class="sd-thl" tabindex="0">Весна</span></th>
+            <th data-field="summer_status" data-tip="Оцінка сезону: Сильний, Середній, Низький або Замало даних. Правила — у блоці «Статус у сезоні» вгорі."><span class="sd-thl" tabindex="0">Літо</span></th>
+            <th data-field="autumn_status" data-tip="Оцінка сезону: Сильний, Середній, Низький або Замало даних. Правила — у блоці «Статус у сезоні» вгорі."><span class="sd-thl" tabindex="0">Осінь</span></th>
           </tr></thead>
           <tbody></tbody>
         </table>
@@ -234,10 +238,10 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
           <thead><tr>
             <th data-field="city">Напрямок</th>
             <th data-field="country">Країна</th>
-            <th class="n" data-field="requests">Запити</th>
-            <th class="n" data-field="bookings">Броні</th>
-            <th class="n" data-field="conversion">Конверсія</th>
-            <th data-field="low_seasons">Низька в сезони</th>
+            <th class="n" data-field="requests" data-tip="Скільки різних поїздок шукали агенти: агент + дата заїзду. Повторні пошуки тієї самої поїздки рахуються один раз."><span class="sd-thl" tabindex="0">Запити (поїздки)</span></th>
+            <th class="n" data-field="bookings" data-tip="Скільки замовлень оформили. Кожне замовлення рахуємо один раз."><span class="sd-thl" tabindex="0">Броні</span></th>
+            <th class="n" data-field="conversion" data-tip="Броні, поділені на запити: яка частка поїздок, які шукали, закінчилася бронюванням."><span class="sd-thl" tabindex="0">Конверсія</span></th>
+            <th data-field="low_seasons" data-tip="Сезони, у яких статус був «Низький»."><span class="sd-thl" tabindex="0">Низька в сезони</span></th>
           </tr></thead>
           <tbody></tbody>
         </table>
@@ -248,13 +252,13 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
           <thead><tr>
             <th data-field="city">Напрямок</th>
             <th data-field="season">Сезон</th>
-            <th class="n" data-field="agents">Агентів шукали</th>
-            <th class="n" data-field="agents_booked">Агентів забронювали</th>
-            <th class="n" data-field="requests">Запити</th>
-            <th class="n" data-field="bookings">Броні</th>
-            <th class="n" data-field="conversion">Конверсія</th>
-            <th class="n" data-field="season_average">Середня за сезон</th>
-            <th data-field="status">Статус</th>
+            <th class="n" data-field="agents" data-tip="Скільки різних агентів (людей) шукали це місце за сезон. Кожного рахуємо один раз, хоч би скільки поїздок він шукав."><span class="sd-thl" tabindex="0">Агентів шукали</span></th>
+            <th class="n" data-field="agents_booked" data-tip="Скільки з цих агентів зробили хоча б одну бронь у цьому місці за сезон."><span class="sd-thl" tabindex="0">Агентів забронювали</span></th>
+            <th class="n" data-field="requests" data-tip="Скільки різних поїздок шукали агенти: агент + дата заїзду. Повторні пошуки тієї самої поїздки рахуються один раз."><span class="sd-thl" tabindex="0">Запити (поїздки)</span></th>
+            <th class="n" data-field="bookings" data-tip="Скільки замовлень оформили. Кожне замовлення рахуємо один раз."><span class="sd-thl" tabindex="0">Броні</span></th>
+            <th class="n" data-field="conversion" data-tip="Броні, поділені на запити: яка частка поїздок, які шукали, закінчилася бронюванням."><span class="sd-thl" tabindex="0">Конверсія</span></th>
+            <th class="n" data-field="season_average" data-tip="Середня конверсія всієї платформи за цей сезон. З нею порівнюємо місце."><span class="sd-thl" tabindex="0">Середня за сезон</span></th>
+            <th data-field="status" data-tip="Оцінка сезону: Сильний, Середній, Низький або Замало даних. Правила — у блоці «Статус у сезоні» вгорі."><span class="sd-thl" tabindex="0">Статус</span></th>
           </tr></thead>
           <tbody></tbody>
         </table>
@@ -272,11 +276,11 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
             <th data-field="city">Напрямок</th>
             <th data-field="country">Країна</th>
             <th data-field="season">Сезон</th>
-            <th class="n" data-field="requests">Запити</th>
-            <th class="n" data-field="agents">Агентів шукали</th>
-            <th class="n" data-field="agents_booked">Агентів забронювали</th>
-            <th class="n" data-field="conversion">Конверсія</th>
-            <th class="n" data-field="season_average">Середня за сезон</th>
+            <th class="n" data-field="requests" data-tip="Скільки різних поїздок шукали агенти: агент + дата заїзду. Повторні пошуки тієї самої поїздки рахуються один раз."><span class="sd-thl" tabindex="0">Запити (поїздки)</span></th>
+            <th class="n" data-field="agents" data-tip="Скільки різних агентів (людей) шукали це місце за сезон. Кожного рахуємо один раз, хоч би скільки поїздок він шукав."><span class="sd-thl" tabindex="0">Агентів шукали</span></th>
+            <th class="n" data-field="agents_booked" data-tip="Скільки з цих агентів зробили хоча б одну бронь у цьому місці за сезон."><span class="sd-thl" tabindex="0">Агентів забронювали</span></th>
+            <th class="n" data-field="conversion" data-tip="Броні, поділені на запити: яка частка поїздок, які шукали, закінчилася бронюванням."><span class="sd-thl" tabindex="0">Конверсія</span></th>
+            <th class="n" data-field="season_average" data-tip="Середня конверсія всієї платформи за цей сезон. З нею порівнюємо місце."><span class="sd-thl" tabindex="0">Середня за сезон</span></th>
           </tr></thead>
           <tbody></tbody>
         </table>
@@ -306,10 +310,10 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
           <thead><tr>
             <th data-field="area"><button type="button" data-sort="area">Регіон</button></th>
             <th data-field="country"><button type="button" data-sort="country">Країна</button></th>
-            <th class="n" data-field="requests"><button type="button" data-sort="requests">Запити</button></th>
-            <th class="n" data-field="bookings"><button type="button" data-sort="bookings">Броні</button></th>
-            <th class="n" data-field="conversion"><button type="button" data-sort="conversion">Конверсія</button></th>
-            <th class="n" data-field="places"><button type="button" data-sort="places">Місць</button></th>
+            <th class="n" data-field="requests" data-tip="Скільки різних поїздок шукали агенти в усіх селищах регіону разом."><button type="button" data-sort="requests" class="sd-thl">Запити (поїздки)</button></th>
+            <th class="n" data-field="bookings" data-tip="Скільки замовлень оформили. Кожне замовлення рахуємо один раз."><button type="button" data-sort="bookings" class="sd-thl">Броні</button></th>
+            <th class="n" data-field="conversion" data-tip="Броні, поділені на запити: яка частка поїздок, які шукали, закінчилася бронюванням."><button type="button" data-sort="conversion" class="sd-thl">Конверсія</button></th>
+            <th class="n" data-field="places" data-tip="Скільки окремих міст і селищ входить у регіон у наших даних."><button type="button" data-sort="places" class="sd-thl">Місць</button></th>
             <th data-field="main_places">Найчастіше шукають</th>
           </tr></thead>
           <tbody></tbody>
@@ -329,10 +333,10 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
             <th data-field="city"><button type="button" data-sort="city">Місце</button></th>
             <th data-field="country"><button type="button" data-sort="country">Країна</button></th>
             <th data-field="area"><button type="button" data-sort="area">Курортний регіон</button></th>
-            <th class="n" data-field="requests"><button type="button" data-sort="requests">Запити</button></th>
-            <th class="n" data-field="bookings"><button type="button" data-sort="bookings">Броні</button></th>
-            <th class="n" data-field="conversion"><button type="button" data-sort="conversion">Конверсія</button></th>
-            <th class="n" data-field="peak_agents"><button type="button" data-sort="peak_agents">Агентів у піковий сезон</button></th>
+            <th class="n" data-field="requests" data-tip="Скільки різних поїздок шукали агенти за рік: агент + дата заїзду. Повторні пошуки тієї самої поїздки рахуються один раз."><button type="button" data-sort="requests" class="sd-thl">Запити (поїздки)</button></th>
+            <th class="n" data-field="bookings" data-tip="Скільки замовлень оформили. Кожне замовлення рахуємо один раз."><button type="button" data-sort="bookings" class="sd-thl">Броні</button></th>
+            <th class="n" data-field="conversion" data-tip="Броні, поділені на запити: яка частка поїздок, які шукали, закінчилася бронюванням."><button type="button" data-sort="conversion" class="sd-thl">Конверсія</button></th>
+            <th class="n" data-field="peak_agents" data-tip="Скільки різних агентів шукали місце в найактивнішому сезоні. Між сезонами агентів не складаємо: це можуть бути ті самі люди."><button type="button" data-sort="peak_agents" class="sd-thl">Агентів у піковий сезон</button></th>
             <th data-field="seasons">Шукали в сезони</th>
           </tr></thead>
           <tbody></tbody>
@@ -350,12 +354,12 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
         <table id="t-tail" data-source="long_tail" data-row-key="country">
           <thead><tr>
             <th data-field="country">Країна</th>
-            <th class="n" data-field="requests">Запити по країні</th>
-            <th class="n" data-field="bookings">Броні по країні</th>
-            <th class="n" data-field="conversion">Конверсія країни</th>
-            <th class="n" data-field="never_places">Місць без броні</th>
-            <th class="n" data-field="never_requests">Запитів до них</th>
-            <th class="n" data-field="never_share">Частка запитів країни</th>
+            <th class="n" data-field="requests" data-tip="Усі запити (поїздки) в цій країні за рік, у всіх її містах і селищах."><span class="sd-thl" tabindex="0">Запити (поїздки) по країні</span></th>
+            <th class="n" data-field="bookings" data-tip="Усі броні в цій країні за рік, у всіх її містах і селищах."><span class="sd-thl" tabindex="0">Броні по країні</span></th>
+            <th class="n" data-field="conversion" data-tip="Конверсія по країні загалом: броні, поділені на запити, по всіх її містах."><span class="sd-thl" tabindex="0">Конверсія країни</span></th>
+            <th class="n" data-field="never_places" data-tip="Скільки міст і селищ у країні шукали, але за рік жодного разу не забронювали."><span class="sd-thl" tabindex="0">Місць без броні</span></th>
+            <th class="n" data-field="never_requests" data-tip="Скільки запитів (поїздок) припало на ці місця без броні."><span class="sd-thl" tabindex="0">Запитів до них</span></th>
+            <th class="n" data-field="never_share" data-tip="Яку частку всіх запитів країни займають місця без жодної броні."><span class="sd-thl" tabindex="0">Частка запитів країни</span></th>
           </tr></thead>
           <tbody></tbody>
         </table>
@@ -366,8 +370,8 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
           <table id="t-never" data-source="never_booked" data-row-key="city,country">
             <thead><tr>
               <th data-field="city"><button type="button" data-sort="city">Місце</button></th>
-              <th class="n" data-field="requests"><button type="button" data-sort="requests">Запити</button></th>
-              <th class="n" data-field="peak_agents"><button type="button" data-sort="peak_agents">Агентів у піковий сезон</button></th>
+              <th class="n" data-field="requests" data-tip="Скільки різних поїздок шукали агенти за рік: агент + дата заїзду."><button type="button" data-sort="requests" class="sd-thl">Запити (поїздки)</button></th>
+              <th class="n" data-field="peak_agents" data-tip="Скільки різних агентів шукали місце в найактивнішому сезоні. Між сезонами агентів не складаємо: це можуть бути ті самі люди."><button type="button" data-sort="peak_agents" class="sd-thl">Агентів у піковий сезон</button></th>
               <th data-field="seasons">Шукали в сезони</th>
             </tr></thead>
             <tbody></tbody>
@@ -395,12 +399,12 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
             <th class="n" data-field="rank">№</th>
             <th data-field="city">Напрямок</th>
             <th data-field="country">Країна</th>
-            <th class="n" data-field="requests">Запити</th>
-            <th class="n" data-field="share">Частка сезону</th>
-            <th class="n" data-field="agents">Агенти</th>
-            <th class="n" data-field="bookings">Броні</th>
-            <th class="n" data-field="conversion">Конверсія</th>
-            <th data-field="status">Статус</th>
+            <th class="n" data-field="requests" data-tip="Скільки різних поїздок шукали агенти: агент + дата заїзду. Повторні пошуки тієї самої поїздки рахуються один раз."><span class="sd-thl" tabindex="0">Запити (поїздки)</span></th>
+            <th class="n" data-field="share" data-tip="Яку частку всіх запитів сезону дало це місце."><span class="sd-thl" tabindex="0">Частка сезону</span></th>
+            <th class="n" data-field="agents" data-tip="Скільки різних агентів (людей) шукали це місце за сезон. Кожного рахуємо один раз, хоч би скільки поїздок він шукав."><span class="sd-thl" tabindex="0">Агентів шукали</span></th>
+            <th class="n" data-field="bookings" data-tip="Скільки замовлень оформили. Кожне замовлення рахуємо один раз."><span class="sd-thl" tabindex="0">Броні</span></th>
+            <th class="n" data-field="conversion" data-tip="Броні, поділені на запити: яка частка поїздок, які шукали, закінчилася бронюванням."><span class="sd-thl" tabindex="0">Конверсія</span></th>
+            <th data-field="status" data-tip="Оцінка сезону: Сильний, Середній, Низький або Замало даних. Правила — у блоці «Статус у сезоні» вгорі."><span class="sd-thl" tabindex="0">Статус</span></th>
           </tr></thead>
           <tbody></tbody>
         </table>
@@ -769,6 +773,29 @@ window.dash = (() => {
     state.sort[id] = cur && cur.field === field ? { field, dir: -cur.dir } : { field, dir: numeric ? -1 : 1 };
     drawTables();
   }));
+
+  const htip = document.createElement('div');
+  htip.className = 'sd-htip';
+  htip.setAttribute('role', 'tooltip');
+  htip.hidden = true;
+  root.append(htip);
+  const showTip = (th) => {
+    htip.textContent = th.dataset.tip;
+    htip.hidden = false;
+    const r = th.getBoundingClientRect();
+    const base = root.getBoundingClientRect();
+    const w = htip.offsetWidth;
+    htip.style.left = Math.min(Math.max(0, r.left - base.left), root.clientWidth - w) + 'px';
+    htip.style.top = (r.bottom - base.top + 6) + 'px';
+  };
+  root.addEventListener('mouseover', (e) => { const th = e.target.closest('th[data-tip]'); if (th) showTip(th); });
+  root.addEventListener('mouseout', (e) => {
+    const th = e.target.closest('th[data-tip]');
+    if (th && !th.contains(e.relatedTarget)) htip.hidden = true;
+  });
+  root.addEventListener('focusin', (e) => { const th = e.target.closest('th[data-tip]'); if (th) showTip(th); });
+  root.addEventListener('focusout', () => { htip.hidden = true; });
+  root.addEventListener('scroll', () => { htip.hidden = true; }, true);
 
   const named = location.hash.slice(1);
   showTab(['price', 'interest', 'seasons', 'method'].includes(named) ? named : 'price', false);
