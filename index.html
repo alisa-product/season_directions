@@ -426,7 +426,7 @@ window.dash = (() => {
   const listeners = [];
   const run = () => listeners.forEach((fn) => fn());
   ids.forEach((id) => { store[id] = { status: 'loading', data: [] }; });
-  Promise.all(ids.map((id) => fetch('data/' + id + '.json')
+  Promise.all(ids.map((id) => fetch('data/' + id + '.json', { cache: 'no-cache' })
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((rows) => { store[id] = { status: 'ok', data: rows }; })
     .catch(() => { store[id] = { status: 'error', data: [] }; }))).then(run);
