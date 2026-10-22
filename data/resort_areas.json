@@ -1,0 +1,128 @@
+[
+ {
+  "area": "Анталійське узбережжя",
+  "country": "Туреччина",
+  "places": 11,
+  "requests": 120,
+  "bookings": 14,
+  "conversion": 0.1167,
+  "main_places": "Belek, Kemer, Antalya, Side"
+ },
+ {
+  "area": "Майорка",
+  "country": "Іспанія",
+  "places": 22,
+  "requests": 84,
+  "bookings": 10,
+  "conversion": 0.119,
+  "main_places": "Muro, Calvià, Mallorca, Palma"
+ },
+ {
+  "area": "Крит",
+  "country": "Греція",
+  "places": 17,
+  "requests": 81,
+  "bookings": 9,
+  "conversion": 0.1111,
+  "main_places": "Ágios Nikólaos, Rethymno, Khersónisos, Irákleion"
+ },
+ {
+  "area": "Червоне море, Єгипет",
+  "country": "Єгипет",
+  "places": 5,
+  "requests": 72,
+  "bookings": 13,
+  "conversion": 0.1806,
+  "main_places": "Sharm el-Sheikh, Marsa Alam, Hurghada, Makadi Bay"
+ },
+ {
+  "area": "Халкідіки",
+  "country": "Греція",
+  "places": 10,
+  "requests": 59,
+  "bookings": 3,
+  "conversion": 0.0508,
+  "main_places": "Kassándreia, Polýgyros, Néa Potídhaia, Néos Marmarás"
+ },
+ {
+  "area": "Бодрум, Мармарис і Фетхіє",
+  "country": "Туреччина",
+  "places": 13,
+  "requests": 45,
+  "bookings": 1,
+  "conversion": 0.0222,
+  "main_places": "Bodrum, Fethiye, Marmaris, Milas"
+ },
+ {
+  "area": "Тенерифе",
+  "country": "Іспанія",
+  "places": 12,
+  "requests": 41,
+  "bookings": 12,
+  "conversion": 0.2927,
+  "main_places": "Adeje, Santa Cruz de Tenerife, Arona, Puerto de la Cruz"
+ },
+ {
+  "area": "Корфу",
+  "country": "Греція",
+  "places": 6,
+  "requests": 35,
+  "bookings": 3,
+  "conversion": 0.0857,
+  "main_places": "Corfu, Acharávi, Gouviá, Kassiopi"
+ },
+ {
+  "area": "Пхукет і Андаманське узбережжя",
+  "country": "Таїланд",
+  "places": 9,
+  "requests": 26,
+  "bookings": 0,
+  "conversion": 0.0,
+  "main_places": "Phuket, Krabi, Ban Chalong, Phi Phi Don"
+ },
+ {
+  "area": "Айя-Напа і Протарас",
+  "country": "Кіпр",
+  "places": 3,
+  "requests": 24,
+  "bookings": 2,
+  "conversion": 0.0833,
+  "main_places": "Ayia Napa, Paralímni, Protaras"
+ },
+ {
+  "area": "Мадейра",
+  "country": "Португалія",
+  "places": 5,
+  "requests": 23,
+  "bookings": 3,
+  "conversion": 0.1304,
+  "main_places": "Funchal, Madeira, Calheta, Machico"
+ },
+ {
+  "area": "Родос",
+  "country": "Греція",
+  "places": 3,
+  "requests": 19,
+  "bookings": 2,
+  "conversion": 0.1053,
+  "main_places": "Ródos, Faliraki, Lárdos"
+ },
+ {
+  "area": "Узбережжя Чорногорії",
+  "country": "Чорногорія",
+  "places": 6,
+  "requests": 17,
+  "bookings": 0,
+  "conversion": 0.0,
+  "main_places": "Budva, Kotor, Herceg Novi, Bar"
+ },
+ {
+  "area": "Мальдіви",
+  "country": "Мальдіви",
+  "places": 4,
+  "requests": 17,
+  "bookings": 1,
+  "conversion": 0.0588,
+  "main_places": "Male, Kandimas, Maafushi, Meeru Island"
+ }
+]

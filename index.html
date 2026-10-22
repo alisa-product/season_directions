@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Сезонний попит за напрямками</title>
+<meta name="description" content="Пошуки та бронювання готелів за напрямками: весна, літо й осінь 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
+<style>
+/* Layout: one reading column, cards on a warm-grey ground; numbers in tabular figures. */
+:root {
+  --color-bg: #f6f5f1; --color-panel: #ffffff; --color-fg: #1d2129; --color-fg-muted: #5f6672;
+  --color-border-line: #e2dfd7; --color-ok: #2f7a4f; --color-bad: #b4442f; --accent: #2f6db3;
+  --cds-chart-muted: #c9ccd2; --cds-chart-grid: #ebe8e1; --cds-chart-reference: #3b4049;
+  --cds-surface-popover: #ffffff; --cds-border: #dcd8cf; --cds-shadow-popover: 0 6px 20px rgba(20, 24, 31, .12);
+  --cds-text-secondary: #5f6672;
+  --font-anthropic-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-anthropic-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --cds-font-size-caption: 0.8125rem; --cds-font-size-body: 0.9375rem; --cds-font-size-heading: 1.125rem;
+  --cds-font-size-title: clamp(1.75rem, 4vw, 2.5rem); --cds-font-weight-medium: 600;
+  --cds-gap-xs: 0.25rem; --cds-gap-sm: 0.5rem; --cds-gap-md: 1rem; --cds-gap-lg: 1.5rem; --cds-gap-xl: 2rem;
+  --cds-pad-xs: 0.375rem; --cds-pad-sm: 0.5rem; --cds-pad-md: 0.75rem; --cds-pad-lg: 1.25rem;
+  --cds-radius: 8px; --cds-dur-slow: 300ms;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --color-bg: #15171c; --color-panel: #1d2027; --color-fg: #e9e7e2; --color-fg-muted: #a0a6b0;
+  --color-border-line: #2e323b; --color-ok: #6cc290; --color-bad: #ef8a73; --accent: #7fb0ea;
+  --cds-chart-muted: #4a4f59; --cds-chart-grid: #2a2e36; --cds-chart-reference: #d6d3cc;
+  --cds-surface-popover: #23262e; --cds-border: #3a3f49; --cds-shadow-popover: 0 6px 20px rgba(0, 0, 0, .45);
+  --cds-text-secondary: #a0a6b0; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --color-bg: #15171c; --color-panel: #1d2027; --color-fg: #e9e7e2; --color-fg-muted: #a0a6b0;
+  --color-border-line: #2e323b; --color-ok: #6cc290; --color-bad: #ef8a73; --accent: #7fb0ea;
+  --cds-chart-muted: #4a4f59; --cds-chart-grid: #2a2e36; --cds-chart-reference: #d6d3cc;
+  --cds-surface-popover: #23262e; --cds-border: #3a3f49; --cds-shadow-popover: 0 6px 20px rgba(0, 0, 0, .45);
+  --cds-text-secondary: #a0a6b0; color-scheme: dark; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans);
+  line-height: 1.5; padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 64px; }
+.dash-skeleton { color: transparent !important; background: var(--color-border-line); border-radius: 4px; }
+.sd-chart.dash-skeleton { background: transparent; }
+.sd-foot { max-width: 72rem; margin: var(--cds-gap-xl) auto 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.sd-foot a { color: inherit; }
+
+.sd { max-width: 72rem; margin-inline: auto; display: grid; gap: var(--cds-gap-xl); font-family: var(--font-anthropic-sans); color: var(--color-fg); font-variant-numeric: tabular-nums; }
+.sd-head { display: grid; gap: var(--cds-gap-sm); }
+.sd-title { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.15; text-wrap: balance; }
+.sd-sub { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sd-takeaway { margin: 0; font-size: var(--cds-font-size-heading); max-width: 60ch; line-height: 1.4; }
+.sd-takeaway .sd-em { font-weight: 600; }
+.sd-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: var(--cds-gap-md); }
+.sd-kpi { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-xs); align-content: start; }
+.sd-kpi-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.sd-kpi-value { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.1; min-height: 1.1em; }
+.sd-kpi-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.sd-howto { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: var(--cds-gap-md); }
+.sd-def { border-top: 1px solid var(--color-border-line); padding-top: var(--cds-pad-sm); font-size: var(--cds-font-size-body); line-height: 1.45; }
+.sd-def-term { display: block; font-weight: var(--cds-font-weight-medium); margin-bottom: var(--cds-gap-xs); }
+.sd-def p { margin: 0; color: var(--color-fg-muted); }
+.sd-statuses { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--cds-gap-sm); color: var(--color-fg-muted); }
+.sd-statuses li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: var(--cds-gap-sm); align-items: baseline; }
+.sd-statuses .sd-chip { white-space: nowrap; }
+.sd-tabs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); }
+.sd-tab { font: inherit; font-size: var(--cds-font-size-body); background: none; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-sm) var(--cds-pad-md); cursor: pointer; margin-bottom: -1px; }
+.sd-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.sd-tab:focus-visible, .sd-seg button:focus-visible, .sd th button:focus-visible, .sd-search:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.sd-page { display: grid; gap: var(--cds-gap-lg); }
+.sd-page[hidden] { display: none; }
+.sd-intro { margin: 0; max-width: 66ch; line-height: 1.5; }
+.sd-h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.sd-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: var(--cds-gap-md); }
+.sd-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); align-content: start; min-width: 0; }
+.sd-card-head { display: grid; gap: var(--cds-gap-xs); }
+.sd-card-title { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.sd-card-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.45; max-width: 70ch; }
+.sd-ask { font-size: var(--cds-font-size-caption); color: var(--color-fg); }
+.sd-fact { margin: 0; padding: var(--cds-pad-sm) var(--cds-pad-md); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); line-height: 1.45; }
+.sd-tablewrap { overflow-x: auto; position: relative; min-height: 3rem; }
+.sd-tablewrap.sd-tall { max-height: 30rem; overflow: auto; }
+.sd table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-body); }
+.sd th, .sd td { text-align: left; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: middle; white-space: nowrap; }
+.sd th { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); position: sticky; top: 0; background: var(--color-panel); z-index: 1; }
+.sd th.n, .sd td.n { text-align: right; }
+.sd th button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.sd th[aria-sort="ascending"] button::after { content: " ↑"; }
+.sd th[aria-sort="descending"] button::after { content: " ↓"; }
+.sd td.wrap { white-space: normal; min-width: 12rem; color: var(--color-fg-muted); }
+.sd td.place { font-weight: var(--cds-font-weight-medium); }
+.sd-barcell { display: grid; grid-template-columns: minmax(3rem, 8rem) auto; align-items: center; gap: var(--cds-gap-sm); justify-content: end; }
+.sd-bar { height: 0.5rem; border-radius: 4px; background: var(--cds-chart-grid); overflow: hidden; }
+.sd-bar > i { display: block; height: 100%; border-radius: 4px; }
+.sd-chip { display: inline-flex; align-items: center; gap: 0.35rem; font-size: var(--cds-font-size-caption); }
+.sd-chip::before { content: ""; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: currentColor; }
+.sd-chip.is-strong { color: var(--color-ok); }
+.sd-chip.is-low { color: var(--color-bad); }
+.sd-chip.is-average { color: var(--color-fg-muted); }
+.sd-chip.is-few, .sd-chip.is-none { color: var(--color-fg-muted); }
+.sd-chip.is-few::before, .sd-chip.is-none::before { background: transparent; border: 1px solid currentColor; }
+.sd-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.sd-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; width: max-content; }
+.sd-seg button { font: inherit; font-size: var(--cds-font-size-body); background: none; border: 0; padding: var(--cds-pad-xs) var(--cds-pad-md); color: var(--color-fg-muted); cursor: pointer; }
+.sd-seg button + button { border-left: 1px solid var(--color-border-line); }
+.sd-seg button[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); }
+.sd-seasonline { margin: 0; font-size: var(--cds-font-size-body); color: var(--color-fg-muted); }
+.sd-seasonline span[data-field] { color: var(--color-fg); }
+.sd-search { font: inherit; font-size: var(--cds-font-size-body); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); width: min(100%, 18rem); }
+.sd-chart { position: relative; min-height: 22rem; }
+.sd-chart svg { display: block; }
+.sd-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); line-height: 1.4; white-space: nowrap; }
+.sd-tip .k { color: var(--cds-text-secondary); }
+.sd-fail { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sd-fail::before { content: ""; width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--color-bad); }
+.sd-method { margin: 0; padding-left: 1.25rem; display: grid; gap: var(--cds-gap-sm); max-width: 70ch; line-height: 1.5; }
+.sd-method strong { font-weight: var(--cds-font-weight-medium); }
+.sd [data-dash-source-state=empty] { color: transparent; }
+.sd [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.sd-sub { display: grid; gap: var(--cds-gap-sm); border-top: 1px solid var(--color-border-line); padding-top: var(--cds-pad-md); }
+.sd-sub-title { margin: 0; font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); }
+.sd-tailbtn { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; font-weight: var(--cds-font-weight-medium); text-align: left; }
+.sd-tailbtn::before { content: "▸ "; color: var(--color-fg-muted); }
+.sd-tailbtn[aria-expanded="true"]::before { content: "▾ "; }
+.sd-tailbtn:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.sd tr.is-open td { background: var(--color-bg); }
+</style>
+</head>
+<body>
+<div class="sd">
+  <header class="sd-head" id="top">
+    <h1 class="sd-title">Сезонний попит за напрямками</h1>
+    <p class="sd-sub">Пошуки та бронювання готелів за напрямками · весна, літо й осінь 2026</p>
+    <p class="sd-takeaway">Міські поїздки здебільшого бронюють добре, а пляжні курорти Туреччини, Греції, Єгипту й Таїланду — погано. <span class="sd-em dash-skeleton" data-source="summary" data-field="never_share" data-row="0" data-fmt="pct1">—</span> усіх запитів припали на місця, де за рік не було жодної броні.</p>
+  </header>
+
+  <div class="sd-kpis" id="kpis">
+    <div class="sd-kpi">
+      <span class="sd-kpi-label">Запити</span>
+      <span class="sd-kpi-value dash-skeleton" data-source="summary" data-field="requests" data-row="0" data-fmt="int">—</span>
+      <span class="sd-kpi-note">Весна – осінь 2026</span>
+    </div>
+    <div class="sd-kpi">
+      <span class="sd-kpi-label">Броні</span>
+      <span class="sd-kpi-value dash-skeleton" data-source="summary" data-field="bookings" data-row="0" data-fmt="int">—</span>
+      <span class="sd-kpi-note">Унікальні замовлення за той самий період</span>
+    </div>
+    <div class="sd-kpi">
+      <span class="sd-kpi-label">Конверсія</span>
+      <span class="sd-kpi-value dash-skeleton" data-source="summary" data-field="conversion" data-row="0" data-fmt="pct1">—</span>
+      <span class="sd-kpi-note">Броні на запит, у середньому по платформі</span>
+    </div>
+    <div class="sd-kpi">
+      <span class="sd-kpi-label">Запити без броні</span>
+      <span class="sd-kpi-value dash-skeleton" data-source="summary" data-field="never_share" data-row="0" data-fmt="pct1">—</span>
+      <span class="sd-kpi-note"><span class="dash-skeleton" data-source="summary" data-field="never_places" data-row="0" data-fmt="int">—</span> місць шукали, але жодного разу не забронювали</span>
+    </div>
+  </div>
+
+  <section class="sd-howto" id="how-to-read" aria-label="Як читати звіт">
+    <div class="sd-def"><span class="sd-def-term">Запит</span><p>Один агент шукає одне місце на одну дату заїзду. Якщо агент багато разів шукає ту саму поїздку, це все одно один запит.</p></div>
+    <div class="sd-def"><span class="sd-def-term">Конверсія</span><p>Броні, поділені на запити. Порівнюйте її із середньою по платформі за той самий сезон.</p></div>
+    <div class="sd-def"><span class="sd-def-term">Статус у сезоні</span>
+      <ul class="sd-statuses">
+        <li><span class="sd-chip is-strong">Сильний</span><span>на рівні середньої або вище.</span></li>
+        <li><span class="sd-chip is-average">Середній</span><span>нижче середньої, але не настільки, щоб бути низьким.</span></li>
+        <li><span class="sd-chip is-low">Низький</span><span>нижче середньої і при цьому менше її половини, або шукали 8+ агентів, а забронював щонайбільше 1 з 5.</span></li>
+        <li><span class="sd-chip is-few">Замало даних</span><span>менше 5 запитів або менше 3 агентів.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <nav class="sd-tabs" role="tablist" aria-label="Розділи звіту">
+    <button class="sd-tab" role="tab" id="tab-price" data-tab="price" aria-controls="price">Переговори про ціну</button>
+    <button class="sd-tab" role="tab" id="tab-interest" data-tab="interest" aria-controls="interest">Шукають, але не бронюють</button>
+    <button class="sd-tab" role="tab" id="tab-seasons" data-tab="seasons" aria-controls="seasons">За сезонами</button>
+    <button class="sd-tab" role="tab" id="tab-method" data-tab="method" aria-controls="method">Методологія</button>
+  </nav>
+
+  <section class="sd-page" id="price" role="tabpanel" aria-labelledby="tab-price">
+    <p class="sd-intro">Де просити в постачальників кращі ціни і що саме просити. До списку потрапляє місто, у якого картина повторюється більш ніж в одному сезоні або яке набрало помітний обсяг за один сезон. Так один вдалий чи невдалий тиждень не визначає список.</p>
+
+    <div class="sd-card" id="card-key">
+      <div class="sd-card-head">
+        <h2 class="sd-card-title">Ключові напрямки</h2>
+        <p class="sd-card-note">Високий попит (верхня чверть міст за запитами) і сильна конверсія щонайменше у двох сезонах. <span class="sd-ask">Що просити: кращі ціни за обсяг, який ми вже приносимо.</span></p>
+      </div>
+      <div class="sd-tablewrap">
+        <table id="t-key" data-source="key_destinations" data-row-key="city">
+          <thead><tr>
+            <th data-field="city">Напрямок</th>
+            <th data-field="country">Країна</th>
+            <th class="n" data-field="requests">Запити</th>
+            <th class="n" data-field="bookings">Броні</th>
+            <th class="n" data-field="conversion">Конверсія</th>
+            <th data-field="spring_status">Весна</th>
+            <th data-field="summer_status">Літо</th>
+            <th data-field="autumn_status">Осінь</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="sd-card" id="card-problem">
+      <div class="sd-card-head">
+        <h2 class="sd-card-title">Проблемні напрямки</h2>
+        <p class="sd-card-note">Низька конверсія у двох сезонах або більше (принаймні в одному з них 10+ запитів) і жодного разу не сильна. <span class="sd-ask">Що просити: нижчі ціни або більше наявності.</span></p>
+      </div>
+      <p class="sd-fact">Шарм-ель-Шейх восени: шукали <span class="dash-skeleton" data-source="problem_seasons" data-field="agents" data-where="city=Sharm el-Sheikh&amp;season=Осінь" data-fmt="int">—</span> агентів, забронювали <span class="dash-skeleton" data-source="problem_seasons" data-field="agents_booked" data-where="city=Sharm el-Sheikh&amp;season=Осінь" data-fmt="int">—</span>.</p>
+      <div class="sd-tablewrap">
+        <table id="t-problem" data-source="problem_destinations" data-row-key="city">
+          <thead><tr>
+            <th data-field="city">Напрямок</th>
+            <th data-field="country">Країна</th>
+            <th class="n" data-field="requests">Запити</th>
+            <th class="n" data-field="bookings">Броні</th>
+            <th class="n" data-field="conversion">Конверсія</th>
+            <th data-field="low_seasons">Низька в сезони</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="sd-card-note">За сезонами. Кожного агента враховано один раз за сезон.</p>
+      <div class="sd-tablewrap">
+        <table id="t-problem-seasons" data-source="problem_seasons" data-row-key="city,season">
+          <thead><tr>
+            <th data-field="city">Напрямок</th>
+            <th data-field="season">Сезон</th>
+            <th class="n" data-field="agents">Агентів шукали</th>
+            <th class="n" data-field="agents_booked">Агентів забронювали</th>
+            <th class="n" data-field="requests">Запити</th>
+            <th class="n" data-field="bookings">Броні</th>
+            <th class="n" data-field="conversion">Конверсія</th>
+            <th class="n" data-field="season_average">Середня за сезон</th>
+            <th data-field="status">Статус</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="sd-card" id="card-seasonal">
+      <div class="sd-card-head">
+        <h2 class="sd-card-title">Сезонні напрямки</h2>
+        <p class="sd-card-note">Низька конверсія в одному сезоні за 10+ запитів і жодного разу не сильна. Історії поки замало, щоб називати це проблемою на весь рік. <span class="sd-ask">Що просити: ціни на цей сезон заздалегідь, до наступного року.</span></p>
+      </div>
+      <div class="sd-tablewrap">
+        <table id="t-seasonal" data-source="seasonal_destinations" data-row-key="city">
+          <thead><tr>
+            <th data-field="city">Напрямок</th>
+            <th data-field="country">Країна</th>
+            <th data-field="season">Сезон</th>
+            <th class="n" data-field="requests">Запити</th>
+            <th class="n" data-field="agents">Агентів шукали</th>
+            <th class="n" data-field="agents_booked">Агентів забронювали</th>
+            <th class="n" data-field="conversion">Конверсія</th>
+            <th class="n" data-field="season_average">Середня за сезон</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sd-page" id="interest" role="tabpanel" aria-labelledby="tab-interest" hidden>
+    <p class="sd-intro">Для партнерств: місця, які агенти шукають, але майже не бронюють. Тут варто шукати постачальників із більшою кількістю готелів і кращим контентом. Дані показують, де інтерес не перетворюється на броні, але не показують чому: ціна, брак наявності та слабкий контент (фото, описи) тут виглядають однаково.</p>
+
+    <div class="sd-card" id="card-countries">
+      <div class="sd-card-head">
+        <h2 class="sd-card-title">Конверсія за країнами</h2>
+        <p class="sd-card-note">Країни, де за рік було 25+ запитів. Виділено стовпці нижче середньої по платформі; пунктир — середня.</p>
+      </div>
+      <div class="sd-chart dash-skeleton" id="country-chart" data-source="countries summary"></div>
+    </div>
+
+    <div class="sd-card" id="card-areas">
+      <div class="sd-card-head">
+        <h2 class="sd-card-title">Курортні регіони</h2>
+        <p class="sd-card-note">Агенти шукають сусідні курортні селища окремо, і через це не видно, скільки попиту має регіон загалом. Тут їх складено разом. Групування наше.</p>
+      </div>
+      <div class="sd-tablewrap">
+        <table id="t-areas" data-source="resort_areas" data-row-key="area">
+          <thead><tr>
+            <th data-field="area"><button type="button" data-sort="area">Регіон</button></th>
+            <th data-field="country"><button type="button" data-sort="country">Країна</button></th>
+            <th class="n" data-field="requests"><button type="button" data-sort="requests">Запити</button></th>
+            <th class="n" data-field="bookings"><button type="button" data-sort="bookings">Броні</button></th>
+            <th class="n" data-field="conversion"><button type="button" data-sort="conversion">Конверсія</button></th>
+            <th class="n" data-field="places"><button type="button" data-sort="places">Місць</button></th>
+            <th data-field="main_places">Найчастіше шукають</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="sd-card" id="card-places">
+      <div class="sd-card-head">
+        <h2 class="sd-card-title">Шукають, але майже не бронюють</h2>
+        <p class="sd-card-note">8+ запитів за рік, 3+ агенти хоча б в одному сезоні і конверсія менше половини середньої по платформі за рік. Цей список рахується за рік, а проблемні напрямки на вкладці «Переговори про ціну» — посезонно, тому списки можуть відрізнятися: наприклад, Шарм-ель-Шейх за рік має конверсію вище цього порогу, але двічі був низьким у своєму сезоні. Агентів не можна складати між сезонами, тому в колонці агентів наведено найактивніший сезон.</p>
+      </div>
+      <input class="sd-search" id="places-search" type="search" placeholder="Фільтр за місцем, країною або регіоном" aria-label="Фільтр місць">
+      <div class="sd-tablewrap sd-tall">
+        <table id="t-places" data-source="not_booked_places" data-row-key="city,country">
+          <thead><tr>
+            <th data-field="city"><button type="button" data-sort="city">Місце</button></th>
+            <th data-field="country"><button type="button" data-sort="country">Країна</button></th>
+            <th data-field="area"><button type="button" data-sort="area">Курортний регіон</button></th>
+            <th class="n" data-field="requests"><button type="button" data-sort="requests">Запити</button></th>
+            <th class="n" data-field="bookings"><button type="button" data-sort="bookings">Броні</button></th>
+            <th class="n" data-field="conversion"><button type="button" data-sort="conversion">Конверсія</button></th>
+            <th class="n" data-field="peak_agents"><button type="button" data-sort="peak_agents">Агентів у піковий сезон</button></th>
+            <th data-field="seasons">Шукали в сезони</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="sd-card" id="card-tail">
+      <div class="sd-card-head">
+        <h2 class="sd-card-title">Довгий хвіст</h2>
+        <p class="sd-card-note"><span class="dash-skeleton" data-source="summary" data-field="never_places" data-row="0" data-fmt="int">—</span> місць шукали, але не забронювали в жодному сезоні: це <span class="dash-skeleton" data-source="summary" data-field="never_requests" data-row="0" data-fmt="int">—</span> запитів, або <span class="dash-skeleton" data-source="summary" data-field="never_share" data-row="0" data-fmt="pct1">—</span> усього попиту. Кожне місце окремо мале, але разом це третина того, що шукають агенти.</p>
+        <p class="sd-card-note">Це не країни без броней: у кожній країні нижче бронюють (див. «Броні по країні»). Мова про окремі місця всередині країни, де за рік не було жодної броні. Натисніть на країну, щоб побачити ці місця.</p>
+      </div>
+      <div class="sd-tablewrap">
+        <table id="t-tail" data-source="long_tail" data-row-key="country">
+          <thead><tr>
+            <th data-field="country">Країна</th>
+            <th class="n" data-field="requests">Запити по країні</th>
+            <th class="n" data-field="bookings">Броні по країні</th>
+            <th class="n" data-field="conversion">Конверсія країни</th>
+            <th class="n" data-field="never_places">Місць без броні</th>
+            <th class="n" data-field="never_requests">Запитів до них</th>
+            <th class="n" data-field="never_share">Частка запитів країни</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="sd-sub" id="tail-places">
+        <h3 class="sd-sub-title">Місця без жодної броні: <span class="sd-tc" data-source="long_tail" data-field="country" data-where="country=Іспанія" data-fmt="text">—</span></h3>
+        <div class="sd-tablewrap sd-tall">
+          <table id="t-never" data-source="never_booked" data-row-key="city,country">
+            <thead><tr>
+              <th data-field="city"><button type="button" data-sort="city">Місце</button></th>
+              <th class="n" data-field="requests"><button type="button" data-sort="requests">Запити</button></th>
+              <th class="n" data-field="peak_agents"><button type="button" data-sort="peak_agents">Агентів у піковий сезон</button></th>
+              <th data-field="seasons">Шукали в сезони</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sd-page" id="seasons" role="tabpanel" aria-labelledby="tab-seasons" hidden>
+    <div class="sd-seg" role="group" aria-label="Сезон">
+      <button type="button" data-season="Весна" aria-pressed="false">Весна</button>
+      <button type="button" data-season="Літо" aria-pressed="false">Літо</button>
+      <button type="button" data-season="Осінь" aria-pressed="true">Осінь</button>
+    </div>
+    <p class="sd-seasonline"><span class="sd-sl" data-source="seasons" data-field="period" data-where="season=Осінь" data-fmt="text">—</span> · днів: <span class="sd-sl" data-source="seasons" data-field="days" data-where="season=Осінь" data-fmt="int">—</span> · запитів: <span class="sd-sl" data-source="seasons" data-field="requests" data-where="season=Осінь" data-fmt="int">—</span> · броней: <span class="sd-sl" data-source="seasons" data-field="bookings" data-where="season=Осінь" data-fmt="int">—</span> · середня конверсія: <span class="sd-sl" data-source="seasons" data-field="conversion" data-where="season=Осінь" data-fmt="pct1">—</span> · <span class="sd-sl" data-source="seasons" data-field="zero_share" data-where="season=Осінь" data-fmt="pct1">—</span> запитів припали на місця без жодної броні за сезон</p>
+    <div class="sd-card" id="card-season-top">
+      <div class="sd-card-head">
+        <h2 class="sd-card-title">Найзатребуваніші напрямки</h2>
+        <p class="sd-card-note">Топ-15 за запитами за сезон. Конверсія може перевищувати 100%, якщо агенти бронюють місце без відстеженого пошуку, наприклад під час повторної броні.</p>
+      </div>
+      <div class="sd-tablewrap">
+        <table id="t-season" data-source="season_top" data-row-key="season,city">
+          <thead><tr>
+            <th class="n" data-field="rank">№</th>
+            <th data-field="city">Напрямок</th>
+            <th data-field="country">Країна</th>
+            <th class="n" data-field="requests">Запити</th>
+            <th class="n" data-field="share">Частка сезону</th>
+            <th class="n" data-field="agents">Агенти</th>
+            <th class="n" data-field="bookings">Броні</th>
+            <th class="n" data-field="conversion">Конверсія</th>
+            <th data-field="status">Статус</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sd-page" id="method" role="tabpanel" aria-labelledby="tab-method" hidden>
+    <ol class="sd-method">
+      <li><strong>Джерело.</strong> Події пошуку та бронювання готелів з Amplitude, вивантажені за сезонами й прив'язані до міста або курортного селища. Пошуки лише за країною не враховано. Не враховано й невелику частку готелів і місць, які не вдалося прив'язати до міста.</li>
+      <li><strong>Назви місць</strong> подано так, як їх записано в Amplitude, щоб їх можна було звірити з джерелом. Дублікати назв кирилицею (наприклад, «Калелья» і Calella) та назви готелів або вулиць замість міста об'єднано з відповідним місцем. Кілька записів, де місце не вдалося визначити, позначено «(місце не визначене)».</li>
+      <li><strong>Запит.</strong> Один агент, одне місце, одна дата заїзду. Повторні пошуки тієї самої поїздки рахуються одним запитом, тому місце не піднімається в рейтингу лише через те, що агенти багато разів порівнювали ціни.</li>
+      <li><strong>Броні.</strong> Унікальні замовлення за заброньованим місцем. Бронь не прив'язана до конкретного пошуку, тому конверсія може перевищувати 100% там, де агенти бронюють без відстеженого пошуку.</li>
+      <li><strong>Сезони різної довжини.</strong> Весна — <span data-source="seasons" data-field="days" data-where="season=Весна" data-fmt="int">—</span> днів, літо — <span data-source="seasons" data-field="days" data-where="season=Літо" data-fmt="int">—</span>, осінь — <span data-source="seasons" data-field="days" data-where="season=Осінь" data-fmt="int">—</span> (по 21 жовтня). Між сезонами порівнюйте частки й конверсію, а не абсолютні цифри.</li>
+      <li><strong>Обсяги невеликі.</strong> У більшості місць менше 10 запитів за сезон, тому одна бронь сильно змінює конверсію. Статус ставиться, лише якщо за сезон було 5+ запитів і 3+ агенти. До списків для переговорів місто потрапляє, якщо картина повторюється у двох сезонах або в одному сезоні було 10+ запитів.</li>
+      <li><strong>Агенти.</strong> Агента враховано один раз на місце за сезон. Той самий агент може шукати в різних сезонах, тому кількість агентів між сезонами не складається.</li>
+      <li><strong>Курортні регіони</strong> об'єднують сусідні селища, які агенти шукають окремо (наприклад, Белек, Кемер і Сіде — в Анталійське узбережжя). Групування наше і використовується лише на вкладці «Шукають, але не бронюють».</li>
+      <li><strong>Чого ці дані не показують.</strong> Чому місце не конвертується. Щоб відокремити ціну, наявність і контент, потрібна воронка по кожному місцю: скільки готелів повернув пошук, як часто агенти відкривали сторінку готелю і як часто доходили до вибору тарифу.</li>
+    </ol>
+  </section>
+</div>
+<p class="sd-foot">Дані: Amplitude, вивантаження за сезонами 2026 року. Таблиці з даними у форматах JSON і CSV лежать у теці <a href="https://github.com/alisa-product/season_directions/tree/main/data">data</a> репозиторію.</p>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+// Small stand-in for the dashboard runtime: loads data/*.json and redraws on data and resize.
+window.dash = (() => {
+  const ids = ["countries", "key_destinations", "long_tail", "never_booked", "not_booked_places", "problem_destinations", "problem_seasons", "resort_areas", "season_top", "seasonal_destinations", "seasons", "summary"];
+  const store = {};
+  const listeners = [];
+  const run = () => listeners.forEach((fn) => fn());
+  ids.forEach((id) => { store[id] = { status: 'loading', data: [] }; });
+  Promise.all(ids.map((id) => fetch('data/' + id + '.json')
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((rows) => { store[id] = { status: 'ok', data: rows }; })
+    .catch(() => { store[id] = { status: 'error', data: [] }; }))).then(run);
+  let t;
+  window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(run, 150); });
+  return {
+    data: (id) => store[id] || { status: 'error', data: [] },
+    onData: (fn) => { listeners.push(fn); fn(); },
+    colors: ['var(--accent)'],
+    setLink: (id) => { try { history.replaceState(null, '', '#' + id); } catch (e) { /* ignore */ } },
+  };
+})();
+</script>
+<script>
+(() => {
+  const root = document.querySelector('.sd');
+  const uk = d3.formatLocale({ decimal: ',', thousands: '\u00a0', grouping: [3], currency: ['', ''] });
+  const fmtInt = uk.format(',');
+  const pct0 = uk.format('.0%');
+  const pct1 = uk.format('.1%');
+  const FMT = { int: (v) => fmtInt(v), pct0: (v) => pct0(v), pct1: (v) => pct1(v), text: (v) => String(v) };
+  const state = { tab: 'price', season: 'Осінь', tailCountry: null, q: '', sort: { resort_areas: { field: 'requests', dir: -1 }, not_booked_places: { field: 'requests', dir: -1 }, never_booked: { field: 'requests', dir: -1 } } };
+
+  const rowsOf = (id) => {
+    const s = dash.data(id);
+    return s.status === 'ok' && Array.isArray(s.data) ? s.data : null;
+  };
+  const parseWhere = (w) => w.split('&').map((p) => {
+    const i = p.indexOf('=');
+    return [decodeURIComponent(p.slice(0, i)), decodeURIComponent(p.slice(i + 1))];
+  });
+
+  function fillValues() {
+    root.querySelectorAll('[data-fmt][data-source]').forEach((el) => {
+      const s = dash.data(el.dataset.source);
+      if (s.status === 'loading') return;
+      el.classList.remove('dash-skeleton');
+      const rows = rowsOf(el.dataset.source);
+      let r = null;
+      if (rows) {
+        if (el.dataset.where) {
+          const w = parseWhere(el.dataset.where);
+          r = rows.find((x) => w.every(([k, v]) => String(x[k]) === v)) || null;
+        } else {
+          r = rows[Number(el.dataset.row || 0)] || null;
+        }
+      }
+      el.textContent = r && r[el.dataset.field] != null ? FMT[el.dataset.fmt](r[el.dataset.field]) : '—';
+    });
+  }
+
+  const STATUS_CLASS = { 'Сильний': 'is-strong', 'Низький': 'is-low', 'Середній': 'is-average', 'Замало даних': 'is-few', 'Не шукали': 'is-none' };
+  function cell(tr, value, kind, extra) {
+    const td = document.createElement('td');
+    if (kind === 'tailbtn') {
+      td.className = 'place';
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'sd-tailbtn';
+      btn.setAttribute('aria-expanded', String(value === state.tailCountry));
+      btn.setAttribute('aria-controls', 'tail-places');
+      btn.textContent = value;
+      td.append(btn);
+      if (value === state.tailCountry) tr.classList.add('is-open');
+    } else if (kind === 'status') {
+      const chip = document.createElement('span');
+      chip.className = 'sd-chip ' + (STATUS_CLASS[value] || 'is-none');
+      chip.textContent = value;
+      td.append(chip);
+    } else if (kind === 'bar') {
+      td.className = 'n';
+      const wrap = document.createElement('div');
+      wrap.className = 'sd-barcell';
+      const bar = document.createElement('div');
+      bar.className = 'sd-bar';
+      const fill = document.createElement('i');
+      fill.style.width = Math.max(2, (value / extra.max) * 100) + '%';
+      fill.style.background = extra.color;
+      bar.append(fill);
+      const txt = document.createElement('span');
+      txt.textContent = fmtInt(value);
+      wrap.append(bar, txt);
+      td.append(wrap);
+    } else {
+      if (kind === 'int' || kind === 'pct0' || kind === 'pct1') td.className = 'n';
+      if (kind === 'place') td.className = 'place';
+      if (kind === 'wrap') td.className = 'wrap';
+      td.textContent = value == null || value === '' ? '—' : (FMT[kind] ? FMT[kind](value) : String(value));
+    }
+    tr.append(td);
+  }
+
+  function markFail(table, failed) {
+    const wrap = table.closest('.sd-tablewrap');
+    let note = wrap.querySelector(':scope > .sd-fail');
+    if (failed && !note) {
+      note = document.createElement('div');
+      note.className = 'sd-fail';
+      note.textContent = 'Не вдалося завантажити';
+      wrap.append(note);
+    } else if (!failed && note) {
+      note.remove();
+    }
+  }
+
+  function drawTable(tableId, id, cols, opts = {}) {
+    const table = document.getElementById(tableId);
+    const tbody = table.tBodies[0];
+    const s = dash.data(id);
+    if (s.status !== 'ok') {
+      tbody.replaceChildren();
+      markFail(table, s.status === 'error');
+      return;
+    }
+    markFail(table, false);
+    let rows = rowsOf(id).slice();
+    if (opts.filter) rows = rows.filter(opts.filter);
+    const sort = state.sort[id];
+    if (sort) {
+      rows.sort((a, b) => {
+        const x = a[sort.field], y = b[sort.field];
+        const c = typeof x === 'number' && typeof y === 'number' ? x - y : String(x).localeCompare(String(y));
+        return c * sort.dir;
+      });
+      table.querySelectorAll('th').forEach((th) => {
+        if (th.querySelector('button')) th.setAttribute('aria-sort', th.dataset.field === sort.field ? (sort.dir > 0 ? 'ascending' : 'descending') : 'none');
+      });
+    }
+    const keys = table.dataset.rowKey.split(',');
+    const max = {};
+    cols.forEach((c) => { if (c.kind === 'bar') max[c.field] = d3.max(rows, (r) => r[c.field]) || 1; });
+    tbody.replaceChildren(...rows.map((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = keys.length === 1 ? String(r[keys[0]]) : keys.map((k) => encodeURIComponent(r[k])).join(',');
+      cols.forEach((c) => cell(tr, r[c.field], c.kind, c.kind === 'bar' ? { max: max[c.field], color: c.color ? c.color(r) : dash.colors[0] } : null));
+      return tr;
+    }));
+  }
+
+  function drawTables() {
+    drawTable('t-key', 'key_destinations', [
+      { field: 'city', kind: 'place' }, { field: 'country', kind: 'text' }, { field: 'requests', kind: 'int' },
+      { field: 'bookings', kind: 'int' }, { field: 'conversion', kind: 'pct0' },
+      { field: 'spring_status', kind: 'status' }, { field: 'summer_status', kind: 'status' }, { field: 'autumn_status', kind: 'status' },
+    ]);
+    drawTable('t-problem', 'problem_destinations', [
+      { field: 'city', kind: 'place' }, { field: 'country', kind: 'text' }, { field: 'requests', kind: 'int' },
+      { field: 'bookings', kind: 'int' }, { field: 'conversion', kind: 'pct0' }, { field: 'low_seasons', kind: 'text' },
+    ]);
+    drawTable('t-problem-seasons', 'problem_seasons', [
+      { field: 'city', kind: 'place' }, { field: 'season', kind: 'text' }, { field: 'agents', kind: 'int' },
+      { field: 'agents_booked', kind: 'int' }, { field: 'requests', kind: 'int' }, { field: 'bookings', kind: 'int' },
+      { field: 'conversion', kind: 'pct0' }, { field: 'season_average', kind: 'pct0' }, { field: 'status', kind: 'status' },
+    ]);
+    drawTable('t-seasonal', 'seasonal_destinations', [
+      { field: 'city', kind: 'place' }, { field: 'country', kind: 'text' }, { field: 'season', kind: 'text' },
+      { field: 'requests', kind: 'int' }, { field: 'agents', kind: 'int' }, { field: 'agents_booked', kind: 'int' },
+      { field: 'conversion', kind: 'pct0' }, { field: 'season_average', kind: 'pct0' },
+    ]);
+    drawTable('t-areas', 'resort_areas', [
+      { field: 'area', kind: 'place' }, { field: 'country', kind: 'text' },
+      { field: 'requests', kind: 'bar', color: () => dash.colors[0] },
+      { field: 'bookings', kind: 'int' }, { field: 'conversion', kind: 'pct0' }, { field: 'places', kind: 'int' },
+      { field: 'main_places', kind: 'wrap' },
+    ]);
+    const q = state.q.trim().toLowerCase();
+    drawTable('t-places', 'not_booked_places', [
+      { field: 'city', kind: 'place' }, { field: 'country', kind: 'text' }, { field: 'area', kind: 'text' },
+      { field: 'requests', kind: 'int' }, { field: 'bookings', kind: 'int' }, { field: 'conversion', kind: 'pct0' },
+      { field: 'peak_agents', kind: 'int' }, { field: 'seasons', kind: 'text' },
+    ], { filter: q ? (r) => [r.city, r.country, r.area].join(' ').toLowerCase().includes(q) : null });
+    drawTable('t-tail', 'long_tail', [
+      { field: 'country', kind: 'tailbtn' }, { field: 'requests', kind: 'int' }, { field: 'bookings', kind: 'int' },
+      { field: 'conversion', kind: 'pct0' }, { field: 'never_places', kind: 'int' }, { field: 'never_requests', kind: 'int' },
+      { field: 'never_share', kind: 'pct0' },
+    ]);
+    drawTable('t-never', 'never_booked', [
+      { field: 'city', kind: 'place' }, { field: 'requests', kind: 'int' }, { field: 'peak_agents', kind: 'int' },
+      { field: 'seasons', kind: 'text' },
+    ], { filter: (r) => r.country === state.tailCountry });
+    drawTable('t-season', 'season_top', [
+      { field: 'rank', kind: 'int' }, { field: 'city', kind: 'place' }, { field: 'country', kind: 'text' },
+      { field: 'requests', kind: 'int' }, { field: 'share', kind: 'pct1' }, { field: 'agents', kind: 'int' },
+      { field: 'bookings', kind: 'int' }, { field: 'conversion', kind: 'pct0' }, { field: 'status', kind: 'status' },
+    ], { filter: (r) => r.season === state.season });
+  }
+
+  function drawCountries() {
+    const box = document.getElementById('country-chart');
+    if (state.tab !== 'interest' || !box.clientWidth) return;
+    const c = dash.data('countries');
+    const s = dash.data('summary');
+    if (c.status === 'loading' || s.status === 'loading') return;
+    box.classList.remove('dash-skeleton');
+    box.replaceChildren();
+    const rows = rowsOf('countries');
+    const sum = rowsOf('summary');
+    if (!rows || !sum) {
+      if (c.status === 'error' || s.status === 'error') {
+        const f = document.createElement('div');
+        f.className = 'sd-fail';
+        f.textContent = 'Не вдалося завантажити';
+        box.append(f);
+      }
+      return;
+    }
+    const data = rows.slice().sort((a, b) => a.conversion - b.conversion);
+    const avg = sum[0].conversion;
+    const W = box.clientWidth;
+    const rowH = 22;
+    const top = 28, bottom = 8;
+    const H = top + bottom + data.length * rowH;
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img')
+      .attr('aria-label', 'Конверсія за країнами порівняно із середньою по платформі');
+    const probe = svg.append('text').style('font-size', 'var(--cds-font-size-caption)');
+    let labelW = 0;
+    data.forEach((d) => { probe.text(d.country); labelW = Math.max(labelW, probe.node().getComputedTextLength()); });
+    probe.text('100%');
+    const valueW = probe.node().getComputedTextLength() + 8;
+    probe.remove();
+    const left = Math.min(labelW + 10, W * 0.42);
+    const right = valueW + 4;
+    const x = d3.scaleLinear([0, Math.max(d3.max(data, (d) => d.conversion), avg)], [left, W - right]);
+    const y = d3.scaleBand(data.map((d) => d.country), [top, H - bottom]).padding(0.28);
+
+    svg.append('g').selectAll('line').data(x.ticks(4)).join('line')
+      .attr('x1', (t) => x(t)).attr('x2', (t) => x(t)).attr('y1', top - 4).attr('y2', H - bottom)
+      .style('stroke', 'var(--cds-chart-grid)').style('stroke-width', 1);
+
+    svg.append('g').selectAll('text').data(data).join('text')
+      .attr('x', left - 8).attr('y', (d) => y(d.country) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
+      .style('font-size', 'var(--cds-font-size-caption)').style('fill', 'var(--color-fg)')
+      .text((d) => d.country);
+
+    const bars = svg.append('g').selectAll('rect').data(data).join('rect')
+      .attr('x', left).attr('y', (d) => y(d.country)).attr('height', y.bandwidth())
+      .attr('width', (d) => Math.max(1, x(d.conversion) - left)).attr('rx', 4)
+      .style('fill', (d) => (d.conversion < avg ? dash.colors[0] : 'var(--cds-chart-muted)'));
+
+    svg.append('g').selectAll('text').data(data).join('text')
+      .attr('x', (d) => x(d.conversion) + 6).attr('y', (d) => y(d.country) + y.bandwidth() / 2).attr('dy', '0.35em')
+      .style('font-size', 'var(--cds-font-size-caption)').style('fill', 'var(--color-fg-muted)')
+      .text((d) => pct0(d.conversion));
+
+    const ax = x(avg);
+    svg.append('line').attr('x1', ax).attr('x2', ax).attr('y1', top - 6).attr('y2', H - bottom)
+      .style('stroke', 'var(--cds-chart-reference)').style('stroke-width', 1.5).style('stroke-dasharray', '4 3');
+    const avgLabel = svg.append('text').attr('y', top - 12)
+      .style('font-size', 'var(--cds-font-size-caption)').style('fill', 'var(--color-fg-muted)')
+      .text('Середня по платформі ' + pct1(avg));
+    const lw = avgLabel.node().getComputedTextLength();
+    avgLabel.attr('x', Math.min(Math.max(ax - lw / 2, left), W - lw - 2));
+
+    const tip = document.createElement('div');
+    tip.className = 'sd-tip';
+    tip.hidden = true;
+    box.append(tip);
+    bars.on('mouseenter mousemove', (event, d) => {
+      tip.replaceChildren();
+      const head = document.createElement('div');
+      head.className = 'k';
+      head.textContent = d.country;
+      const l1 = document.createElement('div');
+      l1.textContent = 'Конверсія ' + pct1(d.conversion);
+      const l2 = document.createElement('div');
+      l2.textContent = 'Запитів: ' + fmtInt(d.requests) + ' · броней: ' + fmtInt(d.bookings);
+      const l3 = document.createElement('div');
+      l3.textContent = 'Без броні: ' + fmtInt(d.never_places) + ' з ' + fmtInt(d.places) + ' місць';
+      tip.append(head, l1, l2, l3);
+      tip.hidden = false;
+      const [mx, my] = d3.pointer(event, box);
+      const tw = tip.offsetWidth;
+      tip.style.left = Math.min(Math.max(mx + 12, 0), box.clientWidth - tw) + 'px';
+      tip.style.top = (my + 14) + 'px';
+      d3.select(event.currentTarget).style('opacity', 0.8);
+    }).on('mouseleave', (event) => {
+      tip.hidden = true;
+      d3.select(event.currentTarget).style('opacity', null);
+    });
+  }
+
+  function pickTail() {
+    const rows = rowsOf('long_tail');
+    if (rows && rows.length && !rows.some((r) => r.country === state.tailCountry)) state.tailCountry = rows[0].country;
+    if (state.tailCountry) {
+      root.querySelectorAll('.sd-tc').forEach((el) => { el.dataset.where = 'country=' + encodeURIComponent(state.tailCountry); });
+    }
+  }
+
+  function drawAll() {
+    pickTail();
+    fillValues();
+    drawTables();
+    drawCountries();
+  }
+
+  const tabs = Array.from(root.querySelectorAll('.sd-tab'));
+  function showTab(id, link) {
+    state.tab = id;
+    tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === id)));
+    root.querySelectorAll('.sd-page').forEach((p) => { p.hidden = p.id !== id; });
+    if (link) dash.setLink(id);
+    drawCountries();
+  }
+  tabs.forEach((t) => t.addEventListener('click', () => showTab(t.dataset.tab, true)));
+
+  root.querySelectorAll('.sd-seg button').forEach((b) => b.addEventListener('click', () => {
+    state.season = b.dataset.season;
+    root.querySelectorAll('.sd-seg button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    root.querySelectorAll('.sd-sl').forEach((el) => { el.dataset.where = 'season=' + state.season; });
+    drawAll();
+  }));
+
+  document.getElementById('t-tail').addEventListener('click', (event) => {
+    const btn = event.target.closest('.sd-tailbtn');
+    if (!btn) return;
+    state.tailCountry = btn.closest('tr').dataset.key;
+    pickTail();
+    fillValues();
+    drawTables();
+    document.getElementById('tail-places').scrollIntoView({ block: 'nearest' });
+  });
+
+  document.getElementById('places-search').addEventListener('input', (e) => {
+    state.q = e.target.value;
+    drawTables();
+  });
+
+  root.querySelectorAll('th button[data-sort]').forEach((b) => b.addEventListener('click', () => {
+    const id = b.closest('table').dataset.source;
+    const cur = state.sort[id];
+    const field = b.dataset.sort;
+    const numeric = b.closest('th').classList.contains('n');
+    state.sort[id] = cur && cur.field === field ? { field, dir: -cur.dir } : { field, dir: numeric ? -1 : 1 };
+    drawTables();
+  }));
+
+  const named = location.hash.slice(1);
+  showTab(['price', 'interest', 'seasons', 'method'].includes(named) ? named : 'price', false);
+  dash.onData(drawAll);
+})();
+</script>
+</body>
+</html>

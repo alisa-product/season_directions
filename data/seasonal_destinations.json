@@ -1,0 +1,68 @@
+[
+ {
+  "city": "Corfu",
+  "country": "Греція",
+  "season": "Літо",
+  "requests": 27,
+  "agents": 13,
+  "agents_booked": 2,
+  "bookings": 2,
+  "conversion": 0.0741,
+  "season_average": 0.3346
+ },
+ {
+  "city": "Kassándreia",
+  "country": "Греція",
+  "season": "Літо",
+  "requests": 19,
+  "agents": 8,
+  "agents_booked": 2,
+  "bookings": 3,
+  "conversion": 0.1579,
+  "season_average": 0.3346
+ },
+ {
+  "city": "Ródos",
+  "country": "Греція",
+  "season": "Літо",
+  "requests": 13,
+  "agents": 9,
+  "agents_booked": 1,
+  "bookings": 1,
+  "conversion": 0.0769,
+  "season_average": 0.3346
+ },
+ {
+  "city": "Zakynthos",
+  "country": "Греція",
+  "season": "Літо",
+  "requests": 11,
+  "agents": 6,
+  "agents_booked": 1,
+  "bookings": 1,
+  "conversion": 0.0909,
+  "season_average": 0.3346
+ },
+ {
+  "city": "Male",
+  "country": "Мальдіви",
+  "season": "Літо",
+  "requests": 10,
+  "agents": 8,
+  "agents_booked": 0,
+  "bookings": 0,
+  "conversion": 0.0,
+  "season_average": 0.3346
+ },
+ {
+  "city": "Ágios Nikólaos",
+  "country": "Греція",
+  "season": "Літо",
+  "requests": 10,
+  "agents": 6,
+  "agents_booked": 1,
+  "bookings": 1,
+  "conversion": 0.1,
+  "season_average": 0.3346
+ }
+]

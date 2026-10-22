@@ -1,0 +1,38 @@
+[
+ {
+  "season": "Весна",
+  "period": "9 квітня – 30 травня 2026",
+  "days": 52,
+  "requests": 591,
+  "bookings": 207,
+  "conversion": 0.3503,
+  "places": 309,
+  "zero_places": 226,
+  "zero_requests": 325,
+  "zero_share": 0.5499
+ },
+ {
+  "season": "Літо",
+  "period": "1 червня – 31 серпня 2026",
+  "days": 92,
+  "requests": 1530,
+  "bookings": 512,
+  "conversion": 0.3346,
+  "places": 623,
+  "zero_places": 460,
+  "zero_requests": 719,
+  "zero_share": 0.4699
+ },
+ {
+  "season": "Осінь",
+  "period": "1 вересня – 21 жовтня 2026",
+  "days": 51,
+  "requests": 1365,
+  "bookings": 592,
+  "conversion": 0.4337,
+  "places": 461,
+  "zero_places": 309,
+  "zero_requests": 458,
+  "zero_share": 0.3355
+ }
+]

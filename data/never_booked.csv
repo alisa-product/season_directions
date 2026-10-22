@@ -1,0 +1,446 @@
+﻿city,country,requests,peak_agents,seasons
+Val Thorens,Франція,7,3,"Літо, Осінь"
+Grimaud,Франція,5,3,Літо
+Saint-Tropez,Франція,5,4,Літо
+Montpellier,Франція,3,2,"Весна, Літо"
+Nice,Франція,3,2,"Весна, Літо"
+Porto-Vecchio,Франція,3,2,Літо
+Surville,Франція,3,1,"Весна, Літо"
+Arcachon,Франція,2,2,Літо
+Biarritz,Франція,2,1,"Весна, Літо"
+Chessy,Франція,2,1,"Весна, Літо"
+Opéra,Франція,2,2,Осінь
+Orly,Франція,2,2,Літо
+Pont-Audemer,Франція,2,2,Літо
+Sainte-Maxime,Франція,2,2,Літо
+Tilly-sur-Seulles,Франція,2,2,Літо
+(місце не визначене),Франція,1,1,Літо
+Antibes,Франція,1,1,Літо
+Beaulieu,Франція,1,1,Літо
+Beaulieu-sur-Mer,Франція,1,1,Літо
+Beauvais,Франція,1,1,Літо
+Bourg-Saint-Maurice,Франція,1,1,Літо
+Bussy-Saint-Georges,Франція,1,1,Літо
+Cannes-Écluse,Франція,1,1,Літо
+Carcassonne,Франція,1,1,Літо
+Castelnau-le-Lez,Франція,1,1,Літо
+Chamonix-Mont-Blanc,Франція,1,1,Літо
+Clermont-Ferrand,Франція,1,1,Літо
+Clichy,Франція,1,1,Осінь
+Cléon,Франція,1,1,Літо
+Corsica,Франція,1,1,Літо
+Courchevel,Франція,1,1,Літо
+Fontainebleau,Франція,1,1,Осінь
+Ivry-sur-Seine,Франція,1,1,Осінь
+La Haye-Malherbe,Франція,1,1,Літо
+Le Boulay-Morin,Франція,1,1,Літо
+Le Vaudreuil,Франція,1,1,Літо
+Louviers,Франція,1,1,Літо
+Marcq-en-Barœul,Франція,1,1,Осінь
+Mariosa,Франція,1,1,Літо
+Millau,Франція,1,1,Літо
+Milly-la-Forêt,Франція,1,1,Літо
+Nantes,Франція,1,1,Літо
+Normandy,Франція,1,1,Літо
+Quimper,Франція,1,1,Весна
+Rungis,Франція,1,1,Осінь
+Résidence Saint Pierre d'Etran,Франція,1,1,Літо
+Saint-Germain-des-Prés,Франція,1,1,Весна
+Saint-Jean-Cap-Ferrat,Франція,1,1,Осінь
+Sancerre,Франція,1,1,Літо
+Serris,Франція,1,1,Осінь
+Val-d'Isère,Франція,1,1,Осінь
+Val-de-Reuil,Франція,1,1,Літо
+Villepinte,Франція,1,1,Весна
+Évaux-les-Bains,Франція,1,1,Літо
+Augsburg,Німеччина,4,1,Осінь
+Simmern,Німеччина,4,1,"Літо, Осінь"
+Feldkirchen,Німеччина,2,2,Літо
+Gotha,Німеччина,2,1,Осінь
+Vaterstetten,Німеччина,2,1,"Літо, Осінь"
+Wuppertal,Німеччина,2,1,"Літо, Осінь"
+Adenau,Німеччина,1,1,Осінь
+Aschheim,Німеччина,1,1,Літо
+Bremen,Німеччина,1,1,Весна
+Charlottenburg,Німеччина,1,1,Літо
+Dietzenbach,Німеччина,1,1,Літо
+Fürth,Німеччина,1,1,Осінь
+Haar,Німеччина,1,1,Літо
+Hallbergmoos,Німеччина,1,1,Літо
+Hamm (Sieg),Німеччина,1,1,Осінь
+Hauptbahnhof,Німеччина,1,1,Осінь
+Ladenburg,Німеччина,1,1,Осінь
+Münster,Німеччина,1,1,Літо
+Oberding,Німеччина,1,1,Літо
+Oberhausen,Німеччина,1,1,Осінь
+Olpe,Німеччина,1,1,Осінь
+Osnabrück,Німеччина,1,1,Осінь
+Rotach,Німеччина,1,1,Літо
+Rottach-Egern,Німеччина,1,1,Літо
+Unterhaching,Німеччина,1,1,Літо
+Rethymno,Греція,13,7,"Весна, Літо"
+Polýgyros,Греція,9,4,"Весна, Літо, Осінь"
+Néa Potídhaia,Греція,7,4,"Весна, Літо"
+Crete,Греція,5,3,"Весна, Літо, Осінь"
+Néos Marmarás,Греція,5,3,Літо
+Ouranoupolis,Греція,5,4,Літо
+Níkiti,Греція,4,3,"Весна, Літо"
+Halkidiki,Греція,3,2,"Весна, Літо"
+Kokkíni Cháni,Греція,3,2,"Весна, Осінь"
+Eloúnda,Греція,2,2,Літо
+Ierápetra,Греція,2,1,Літо
+Lagomandra Beach,Греція,2,1,"Весна, Літо"
+Sitia,Греція,2,1,"Весна, Літо"
+Stalís,Греція,2,2,Літо
+Thásos,Греція,2,2,Літо
+Acharávi,Греція,1,1,Весна
+Agía Paraskeví,Греція,1,1,Літо
+Agía Triáda,Греція,1,1,Літо
+Aidipsós,Греція,1,1,Осінь
+Ammoudara,Греція,1,1,Весна
+Attica,Греція,1,1,Літо
+Bali,Греція,1,1,Літо
+Darátsos,Греція,1,1,Весна
+Georgioupolis,Греція,1,1,Літо
+Gouviá,Греція,1,1,Літо
+Gázi,Греція,1,1,Літо
+Gýtheio,Греція,1,1,Літо
+Ierissós,Греція,1,1,Літо
+Kalamiá,Греція,1,1,Літо
+Kassiopi,Греція,1,1,Літо
+Kipséli,Греція,1,1,Літо
+Kos,Греція,1,1,Літо
+Kávos,Греція,1,1,Літо
+Lemnos,Греція,1,1,Літо
+Litóchoro,Греція,1,1,Літо
+Loutráki,Греція,1,1,Осінь
+Lárdos,Греція,1,1,Літо
+Messíni,Греція,1,1,Літо
+Metamórfosi,Греція,1,1,Осінь
+Myrina,Греція,1,1,Літо
+Ornós,Греція,1,1,Літо
+Oía,Греція,1,1,Літо
+Paleokastritsa,Греція,1,1,Літо
+Pefkochóri,Греція,1,1,Літо
+Piraeus,Греція,1,1,Літо
+Platamonas,Греція,1,1,Літо
+Pórto Chéli,Греція,1,1,Літо
+Pýlos,Греція,1,1,Літо
+Pýrgos,Греція,1,1,Літо
+Santorini,Греція,1,1,Осінь
+Skiáthos,Греція,1,1,Літо
+Thérmi,Греція,1,1,Літо
+Tolón,Греція,1,1,Літо
+Xylókastro,Греція,1,1,Літо
+Ágios Stéfanos,Греція,1,1,Літо
+Ágios Vasíleios,Греція,1,1,Літо
+Álimos,Греція,1,1,Літо
+Abano Terme,Італія,6,2,"Літо, Осінь"
+Cernobbio,Італія,3,2,Літо
+Ferno,Італія,3,1,"Весна, Літо"
+Obereggen,Італія,3,1,Весна
+Orosei,Італія,3,1,Літо
+Pula,Італія,3,2,Літо
+Rimini,Італія,3,2,Літо
+Sardinia,Італія,3,2,"Весна, Літо"
+Ancona,Італія,2,1,Літо
+Bardolino,Італія,2,1,"Весна, Літо"
+Bergamo,Італія,2,1,"Літо, Осінь"
+Blevio,Італія,2,1,Літо
+Bressanone,Італія,2,1,Літо
+Cala Gonone,Італія,2,1,"Літо, Осінь"
+Castelrotto,Італія,2,1,Літо
+Como,Італія,2,1,"Літо, Осінь"
+Costa Rei,Італія,2,2,Літо
+Fiumicino,Італія,2,1,"Літо, Осінь"
+Lazise,Італія,2,1,"Весна, Літо"
+Liguria,Італія,2,1,"Весна, Літо"
+Lipari,Італія,2,1,Літо
+Pescara,Італія,2,1,Літо
+Pettenasco,Італія,2,1,Весна
+Torri del Benaco,Італія,2,1,Літо
+Altavilla Milicia,Італія,1,1,Осінь
+Amalfi Coast,Італія,1,1,Літо
+Aquileia,Італія,1,1,Літо
+Badesi,Італія,1,1,Літо
+Badia,Італія,1,1,Літо
+Bari,Італія,1,1,Літо
+Bolzano,Італія,1,1,Літо
+Camaiore,Італія,1,1,Літо
+Campitello di Fassa,Італія,1,1,Літо
+Campofelice di Roccella,Італія,1,1,Весна
+Capanne-Prato-Cinquale,Італія,1,1,Літо
+Cardano al Campo,Італія,1,1,Літо
+Cardedu,Італія,1,1,Літо
+Castel San Pietro Terme,Італія,1,1,Весна
+Castiadas,Італія,1,1,Літо
+Cefalù,Італія,1,1,Осінь
+Cermes,Італія,1,1,Весна
+Crema,Італія,1,1,Осінь
+Fasano,Італія,1,1,Осінь
+Gargnano,Італія,1,1,Літо
+Grosseto,Італія,1,1,Літо
+Iesolo,Італія,1,1,Літо
+Is Molas,Італія,1,1,Літо
+La Maddalena,Італія,1,1,Літо
+Lacco Ameno,Італія,1,1,Літо
+Lake Garda,Італія,1,1,Літо
+Lucca,Італія,1,1,Літо
+Malgrate,Італія,1,1,Весна
+Manciano,Італія,1,1,Літо
+Marsala,Італія,1,1,Осінь
+Melissa,Італія,1,1,Осінь
+Menaggio,Італія,1,1,Осінь
+Montecatini-Terme,Італія,1,1,Осінь
+Ortisei,Італія,1,1,Осінь
+Parghelia,Італія,1,1,Літо
+Pietrasanta,Італія,1,1,Літо
+Pinzolo,Італія,1,1,Осінь
+Pisa,Італія,1,1,Літо
+Pittulongu,Італія,1,1,Літо
+Rasun Anterselva - Rasen-Antholz,Італія,1,1,Осінь
+Recco,Італія,1,1,Літо
+Rho,Італія,1,1,Весна
+Ricadi,Італія,1,1,Літо
+Salerno,Італія,1,1,Весна
+San Pietro,Італія,1,1,Весна
+San Teodoro,Італія,1,1,Літо
+Sanremo,Італія,1,1,Літо
+Santa Domenica,Італія,1,1,Літо
+Savona,Італія,1,1,Весна
+Sicily,Італія,1,1,Весна
+Stromboli,Італія,1,1,Літо
+Turin,Італія,1,1,Весна
+Tuscany,Італія,1,1,Весна
+Udine,Італія,1,1,Весна
+Valdaora di Mezzo,Італія,1,1,Літо
+Verona,Італія,1,1,Весна
+Viareggio,Італія,1,1,Літо
+Villasimius,Італія,1,1,Літо
+Rzeszów,Польща,11,4,"Весна, Літо, Осінь"
+Kielce,Польща,5,4,"Літо, Осінь"
+Modlniczka,Польща,2,1,"Літо, Осінь"
+Mokotów,Польща,2,1,"Літо, Осінь"
+Sadowie,Польща,2,1,"Літо, Осінь"
+Sopot,Польща,2,2,Весна
+Starachowice,Польща,2,1,Осінь
+Bielany Wrocławskie,Польща,1,1,Весна
+Chrzanów,Польща,1,1,Осінь
+Fryderyka Chopina,Польща,1,1,Осінь
+Jarosław,Польща,1,1,Весна
+Kwidzyn,Польща,1,1,Літо
+Malbork,Польща,1,1,Весна
+Modlin,Польща,1,1,Весна
+Skarżysko-Kamienna,Польща,1,1,Літо
+Stare Miasto,Польща,1,1,Літо
+Stopnica,Польща,1,1,Весна
+Wawer,Польща,1,1,Осінь
+Wąwolnica,Польща,1,1,Осінь
+Władysławowo,Польща,1,1,Осінь
+Zator,Польща,1,1,Весна
+Funchal,Португалія,8,3,"Весна, Літо"
+Madeira,Португалія,6,3,"Весна, Літо, Осінь"
+Calheta,Португалія,4,2,"Весна, Осінь"
+Cascais,Португалія,4,2,"Весна, Літо, Осінь"
+Lagos,Португалія,3,1,"Весна, Літо, Осінь"
+Algarve,Португалія,1,1,Весна
+Alter do Chão,Португалія,1,1,Весна
+Armação de Pêra,Португалія,1,1,Весна
+Braga,Португалія,1,1,Осінь
+Faro,Португалія,1,1,Літо
+Grândola,Португалія,1,1,Весна
+Lagoa,Португалія,1,1,Весна
+Loulé,Португалія,1,1,Весна
+Porches,Португалія,1,1,Весна
+Santa Cruz,Португалія,1,1,Літо
+São Vicente,Португалія,1,1,Осінь
+Vila do Bispo,Португалія,1,1,Весна
+Calvià,Іспанія,12,5,"Весна, Літо, Осінь"
+Mallorca,Іспанія,10,4,"Весна, Літо, Осінь"
+Alcúdia,Іспанія,5,3,"Весна, Літо"
+Alicante,Іспанія,5,1,"Весна, Літо, Осінь"
+Arona,Іспанія,5,2,"Літо, Осінь"
+Magaluf,Іспанія,5,2,"Весна, Літо, Осінь"
+Palmanova,Іспанія,5,2,"Весна, Осінь"
+Peguera,Іспанія,5,3,"Весна, Літо"
+Playa Blanca,Іспанія,5,1,"Весна, Літо, Осінь"
+(місце не визначене),Іспанія,4,1,"Весна, Літо, Осінь"
+Calonge,Іспанія,4,1,"Весна, Літо"
+Chiclana de la Frontera,Іспанія,4,1,Осінь
+Begur,Іспанія,3,2,Літо
+Costa Brava,Іспанія,3,2,Літо
+Costa Dorada,Іспанія,3,2,"Весна, Літо"
+Los Realejos,Іспанія,3,1,Осінь
+Pineda de Mar,Іспанія,3,1,"Літо, Осінь"
+Platja d'Aro,Іспанія,3,2,Літо
+Yaiza,Іспанія,3,1,Осінь
+Cubelles,Іспанія,2,1,Весна
+Guía de Isora,Іспанія,2,1,"Літо, Осінь"
+La Seu d'Urgell,Іспанія,2,2,Літо
+Santa Eulària des Riu,Іспанія,2,1,"Літо, Осінь"
+Santa Margalida,Іспанія,2,1,"Весна, Осінь"
+Tenerife,Іспанія,2,1,"Літо, Осінь"
+Torredembarra,Іспанія,2,1,Весна
+Alaró,Іспанія,1,1,Літо
+Alcaracejos,Іспанія,1,1,Літо
+Alp,Іспанія,1,1,Літо
+Asturias,Іспанія,1,1,Літо
+Avilés,Іспанія,1,1,Літо
+Balearic Islands,Іспанія,1,1,Літо
+Bellver de Cerdanya,Іспанія,1,1,Літо
+Berga,Іспанія,1,1,Літо
+Biescas,Іспанія,1,1,Літо
+Cadaqués,Іспанія,1,1,Літо
+Cala Font,Іспанія,1,1,Літо
+Cala Rajada,Іспанія,1,1,Літо
+Cala d'Or,Іспанія,1,1,Літо
+Calafell,Іспанія,1,1,Весна
+Cambrils,Іспанія,1,1,Літо
+Can Pastilla,Іспанія,1,1,Весна
+Cantabria,Іспанія,1,1,Літо
+Castelldefels,Іспанія,1,1,Літо
+Cerdanya,Іспанія,1,1,Літо
+Ceuta,Іспанія,1,1,Літо
+Conil de la Frontera,Іспанія,1,1,Літо
+Corvera de Asturias,Іспанія,1,1,Літо
+Costa Blanca,Іспанія,1,1,Весна
+Cunit beach,Іспанія,1,1,Весна
+El Campello,Іспанія,1,1,Весна
+El Cotillo,Іспанія,1,1,Літо
+Els Pins,Іспанія,1,1,Весна
+Escalante,Іспанія,1,1,Літо
+Espot,Іспанія,1,1,Літо
+Estepona,Іспанія,1,1,Літо
+Felanitx,Іспанія,1,1,Літо
+Finestrat,Іспанія,1,1,Літо
+Gasteiz / Vitoria,Іспанія,1,1,Осінь
+Girona,Іспанія,1,1,Літо
+Gran Canaria,Іспанія,1,1,Осінь
+L'Hospitalet de Llobregat,Іспанія,1,1,Осінь
+La Molina,Іспанія,1,1,Літо
+Las Caldas,Іспанія,1,1,Літо
+Llanes,Іспанія,1,1,Літо
+Los Cristianos,Іспанія,1,1,Літо
+Los Gigantes,Іспанія,1,1,Літо
+Manacor,Іспанія,1,1,Весна
+Menorca,Іспанія,1,1,Літо
+Miengo,Іспанія,1,1,Літо
+Mijas,Іспанія,1,1,Літо
+Monda,Іспанія,1,1,Весна
+Muro del Alcoy,Іспанія,1,1,Літо
+Nerja,Іспанія,1,1,Літо
+Ordesa Valley,Іспанія,1,1,Літо
+Oropesa del Mar,Іспанія,1,1,Літо
+Pals,Іспанія,1,1,Літо
+Parres,Іспанія,1,1,Літо
+Pechón,Іспанія,1,1,Літо
+Platja de la Mota de Sant Pere,Іспанія,1,1,Весна
+Playa de Bahía,Іспанія,1,1,Осінь
+Playa de Puerto Rico,Іспанія,1,1,Осінь
+Playa de las Américas,Іспанія,1,1,Літо
+Port de Sóller,Іспанія,1,1,Весна
+Portocolom,Іспанія,1,1,Літо
+Pozoblanco,Іспанія,1,1,Осінь
+Prullans,Іспанія,1,1,Літо
+Puente Viesgo,Іспанія,1,1,Літо
+Ribadeo,Іспанія,1,1,Літо
+Salinas,Іспанія,1,1,Літо
+San Agustín,Іспанія,1,1,Осінь
+San Bartolomé de Tirajana,Іспанія,1,1,Осінь
+San Miguel De Abona,Іспанія,1,1,Осінь
+San Miguel de Meruelo,Іспанія,1,1,Літо
+San Salvador,Іспанія,1,1,Літо
+Sant Maurici de la Quar,Іспанія,1,1,Літо
+Santander,Іспанія,1,1,Літо
+Santiago del Teide,Іспанія,1,1,Осінь
+Segur de Calafell,Іспанія,1,1,Весна
+Ses Salines,Іспанія,1,1,Весна
+Son Servera,Іспанія,1,1,Літо
+Sort,Іспанія,1,1,Літо
+Soto del Barco,Іспанія,1,1,Літо
+Suances,Іспанія,1,1,Літо
+Sóller,Іспанія,1,1,Весна
+Tarifa,Іспанія,1,1,Літо
+Taüll,Іспанія,1,1,Літо
+Toledo,Іспанія,1,1,Весна
+Villajoyosa,Іспанія,1,1,Літо
+Villanueva de Villaescusa,Іспанія,1,1,Літо
+Zahara de los Atunes,Іспанія,1,1,Літо
+l'Alfàs del Pi,Іспанія,1,1,Літо
+Bodrum,Туреччина,13,5,"Весна, Літо, Осінь"
+Serik,Туреччина,10,4,"Весна, Літо, Осінь"
+Manavgat,Туреччина,8,4,"Весна, Літо, Осінь"
+Marmaris,Туреччина,6,4,"Весна, Літо"
+Milas,Туреччина,4,2,"Літо, Осінь"
+Ölüdeniz,Туреччина,3,1,"Весна, Літо, Осінь"
+Beldibi,Туреччина,2,1,"Весна, Літо"
+Bolaman,Туреччина,2,1,"Літо, Осінь"
+Tekirova,Туреччина,2,2,Літо
+Turgutreis,Туреччина,2,2,Літо
+Akyarlar,Туреччина,1,1,Літо
+Arnavutkoey,Туреччина,1,1,Весна
+Didim,Туреччина,1,1,Весна
+Göcek,Туреччина,1,1,Весна
+Güzelbağ,Туреччина,1,1,Осінь
+Harbiye,Туреччина,1,1,Осінь
+Kaş,Туреччина,1,1,Осінь
+Konyaaltı,Туреччина,1,1,Осінь
+Malatya,Туреччина,1,1,Літо
+Mezitli,Туреччина,1,1,Літо
+Nevşehir,Туреччина,1,1,Весна
+Ortaca,Туреччина,1,1,Літо
+Sarigerme,Туреччина,1,1,Літо
+Torba,Туреччина,1,1,Літо
+Yaniklar,Туреччина,1,1,Літо
+Çeşme,Туреччина,1,1,Літо
+Mukachevo,Україна,5,2,"Весна, Літо, Осінь"
+Ternopil,Україна,4,1,"Літо, Осінь"
+Uzhhorod,Україна,4,2,"Літо, Осінь"
+Bukovel,Україна,3,2,"Весна, Літо"
+Chernivtsi,Україна,3,2,"Літо, Осінь"
+Vinnytsya,Україна,3,2,"Літо, Осінь"
+Cherkasy,Україна,2,1,Літо
+Chop,Україна,2,1,"Літо, Осінь"
+Truskavets,Україна,2,2,Весна
+Voronkiv,Україна,2,1,"Весна, Літо"
+Berehove,Україна,1,1,Весна
+Ivano-Frankivsk,Україна,1,1,Осінь
+Kharkiv,Україна,1,1,Осінь
+Lviv Oblast,Україна,1,1,Весна
+Morshyn,Україна,1,1,Весна
+Nadvirna,Україна,1,1,Літо
+Poltava,Україна,1,1,Літо
+Tatariv,Україна,1,1,Весна
+Vyshhorod,Україна,1,1,Весна
+Yaremche,Україна,1,1,Весна
+Zhytomyr,Україна,1,1,Літо
+Los Angeles,США,4,4,Осінь
+Brooklyn,США,2,1,"Весна, Літо"
+Cockeysville,США,2,1,Осінь
+Fort Carson,США,2,2,Літо
+Fountain,США,2,2,Літо
+Las Vegas,США,2,1,"Літо, Осінь"
+Miami,США,2,1,Літо
+Newington,США,2,2,Літо
+North Charleston,США,2,1,Весна
+Pella,США,2,1,Осінь
+Baltimore,США,1,1,Осінь
+Beverly Hills,США,1,1,Осінь
+Clearwater,США,1,1,Осінь
+Cuba City,США,1,1,Літо
+Dallas,США,1,1,Літо
+Florida,США,1,1,Весна
+Grand Rapids,США,1,1,Літо
+Hillsboro,США,1,1,Осінь
+Hilton Head Island,США,1,1,Весна
+Irving,США,1,1,Осінь
+Lancaster,США,1,1,Літо
+Long Island,США,1,1,Літо
+Newport,США,1,1,Літо
+Phoenix,США,1,1,Осінь
+Portland,США,1,1,Осінь
+Santa Monica,США,1,1,Осінь
+South Beach,США,1,1,Весна
+Sparta,США,1,1,Літо
+Surfside,США,1,1,Весна
+Tarrytown,США,1,1,Осінь

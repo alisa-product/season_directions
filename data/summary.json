@@ -1,0 +1,11 @@
+[
+ {
+  "requests": 3486,
+  "bookings": 1311,
+  "conversion": 0.3761,
+  "never_places": 717,
+  "never_requests": 1229,
+  "never_share": 0.3526,
+  "places": 1010
+ }
+]

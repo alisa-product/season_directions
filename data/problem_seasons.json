@@ -1,0 +1,101 @@
+[
+ {
+  "city": "Sharm el-Sheikh",
+  "season": "Весна",
+  "requests": 4,
+  "agents": 3,
+  "agents_booked": 0,
+  "bookings": 0,
+  "conversion": 0.0,
+  "season_average": 0.3503,
+  "status": "Замало даних"
+ },
+ {
+  "city": "Sharm el-Sheikh",
+  "season": "Літо",
+  "requests": 16,
+  "agents": 10,
+  "agents_booked": 2,
+  "bookings": 4,
+  "conversion": 0.25,
+  "season_average": 0.3346,
+  "status": "Низький"
+ },
+ {
+  "city": "Sharm el-Sheikh",
+  "season": "Осінь",
+  "requests": 26,
+  "agents": 11,
+  "agents_booked": 1,
+  "bookings": 8,
+  "conversion": 0.3077,
+  "season_average": 0.4337,
+  "status": "Низький"
+ },
+ {
+  "city": "Belek",
+  "season": "Весна",
+  "requests": 5,
+  "agents": 3,
+  "agents_booked": 0,
+  "bookings": 0,
+  "conversion": 0.0,
+  "season_average": 0.3503,
+  "status": "Низький"
+ },
+ {
+  "city": "Belek",
+  "season": "Літо",
+  "requests": 14,
+  "agents": 8,
+  "agents_booked": 0,
+  "bookings": 0,
+  "conversion": 0.0,
+  "season_average": 0.3346,
+  "status": "Низький"
+ },
+ {
+  "city": "Belek",
+  "season": "Осінь",
+  "requests": 10,
+  "agents": 4,
+  "agents_booked": 1,
+  "bookings": 1,
+  "conversion": 0.1,
+  "season_average": 0.4337,
+  "status": "Низький"
+ },
+ {
+  "city": "Kemer",
+  "season": "Весна",
+  "requests": 4,
+  "agents": 2,
+  "agents_booked": 0,
+  "bookings": 0,
+  "conversion": 0.0,
+  "season_average": 0.3503,
+  "status": "Замало даних"
+ },
+ {
+  "city": "Kemer",
+  "season": "Літо",
+  "requests": 13,
+  "agents": 10,
+  "agents_booked": 1,
+  "bookings": 4,
+  "conversion": 0.3077,
+  "season_average": 0.3346,
+  "status": "Низький"
+ },
+ {
+  "city": "Kemer",
+  "season": "Осінь",
+  "requests": 10,
+  "agents": 6,
+  "agents_booked": 0,
+  "bookings": 0,
+  "conversion": 0.0,
+  "season_average": 0.4337,
+  "status": "Низький"
+ }
+]

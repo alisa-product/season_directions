@@ -1,0 +1,218 @@
+[
+ {
+  "country": "Таїланд",
+  "requests": 39,
+  "bookings": 4,
+  "conversion": 0.1026,
+  "places": 17,
+  "never_places": 14,
+  "never_requests": 31
+ },
+ {
+  "country": "Туреччина",
+  "requests": 218,
+  "bookings": 32,
+  "conversion": 0.1468,
+  "places": 38,
+  "never_places": 26,
+  "never_requests": 68
+ },
+ {
+  "country": "Єгипет",
+  "requests": 81,
+  "bookings": 13,
+  "conversion": 0.1605,
+  "places": 8,
+  "never_places": 6,
+  "never_requests": 24
+ },
+ {
+  "country": "Греція",
+  "requests": 271,
+  "bookings": 54,
+  "conversion": 0.1993,
+  "places": 74,
+  "never_places": 57,
+  "never_requests": 108
+ },
+ {
+  "country": "Іспанія",
+  "requests": 429,
+  "bookings": 94,
+  "conversion": 0.2191,
+  "places": 141,
+  "never_places": 112,
+  "never_requests": 190
+ },
+ {
+  "country": "Італія",
+  "requests": 220,
+  "bookings": 60,
+  "conversion": 0.2727,
+  "places": 107,
+  "never_places": 82,
+  "never_requests": 117
+ },
+ {
+  "country": "Хорватія",
+  "requests": 70,
+  "bookings": 21,
+  "conversion": 0.3,
+  "places": 28,
+  "never_places": 17,
+  "never_requests": 28
+ },
+ {
+  "country": "Румунія",
+  "requests": 56,
+  "bookings": 18,
+  "conversion": 0.3214,
+  "places": 19,
+  "never_places": 12,
+  "never_requests": 18
+ },
+ {
+  "country": "Португалія",
+  "requests": 87,
+  "bookings": 32,
+  "conversion": 0.3678,
+  "places": 20,
+  "never_places": 17,
+  "never_requests": 37
+ },
+ {
+  "country": "Україна",
+  "requests": 101,
+  "bookings": 38,
+  "conversion": 0.3762,
+  "places": 26,
+  "never_places": 21,
+  "never_requests": 41
+ },
+ {
+  "country": "Франція",
+  "requests": 200,
+  "bookings": 78,
+  "conversion": 0.39,
+  "places": 72,
+  "never_places": 54,
+  "never_requests": 84
+ },
+ {
+  "country": "ОАЕ",
+  "requests": 51,
+  "bookings": 20,
+  "conversion": 0.3922,
+  "places": 6,
+  "never_places": 3,
+  "never_requests": 6
+ },
+ {
+  "country": "Польща",
+  "requests": 338,
+  "bookings": 161,
+  "conversion": 0.4763,
+  "places": 35,
+  "never_places": 21,
+  "never_requests": 40
+ },
+ {
+  "country": "Японія",
+  "requests": 34,
+  "bookings": 17,
+  "conversion": 0.5,
+  "places": 9,
+  "never_places": 3,
+  "never_requests": 4
+ },
+ {
+  "country": "Кіпр",
+  "requests": 55,
+  "bookings": 30,
+  "conversion": 0.5455,
+  "places": 8,
+  "never_places": 3,
+  "never_requests": 9
+ },
+ {
+  "country": "Німеччина",
+  "requests": 103,
+  "bookings": 61,
+  "conversion": 0.5922,
+  "places": 42,
+  "never_places": 25,
+  "never_requests": 35
+ },
+ {
+  "country": "США",
+  "requests": 118,
+  "bookings": 71,
+  "conversion": 0.6017,
+  "places": 46,
+  "never_places": 30,
+  "never_requests": 42
+ },
+ {
+  "country": "Болгарія",
+  "requests": 39,
+  "bookings": 24,
+  "conversion": 0.6154,
+  "places": 12,
+  "never_places": 6,
+  "never_requests": 14
+ },
+ {
+  "country": "Австрія",
+  "requests": 100,
+  "bookings": 62,
+  "conversion": 0.62,
+  "places": 24,
+  "never_places": 18,
+  "never_requests": 23
+ },
+ {
+  "country": "Угорщина",
+  "requests": 75,
+  "bookings": 47,
+  "conversion": 0.6267,
+  "places": 12,
+  "never_places": 7,
+  "never_requests": 8
+ },
+ {
+  "country": "Нідерланди",
+  "requests": 30,
+  "bookings": 20,
+  "conversion": 0.6667,
+  "places": 13,
+  "never_places": 7,
+  "never_requests": 8
+ },
+ {
+  "country": "Молдова",
+  "requests": 139,
+  "bookings": 99,
+  "conversion": 0.7122,
+  "places": 4,
+  "never_places": 3,
+  "never_requests": 3
+ },
+ {
+  "country": "Велика Британія",
+  "requests": 76,
+  "bookings": 55,
+  "conversion": 0.7237,
+  "places": 14,
+  "never_places": 6,
+  "never_requests": 10
+ },
+ {
+  "country": "Чехія",
+  "requests": 30,
+  "bookings": 27,
+  "conversion": 0.9,
+  "places": 9,
+  "never_places": 5,
+  "never_requests": 7
+ }
+]

@@ -1,0 +1,3117 @@
+[
+ {
+  "city": "Val Thorens",
+  "country": "Франція",
+  "requests": 7,
+  "peak_agents": 3,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Grimaud",
+  "country": "Франція",
+  "requests": 5,
+  "peak_agents": 3,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Saint-Tropez",
+  "country": "Франція",
+  "requests": 5,
+  "peak_agents": 4,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Montpellier",
+  "country": "Франція",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Nice",
+  "country": "Франція",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Porto-Vecchio",
+  "country": "Франція",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Surville",
+  "country": "Франція",
+  "requests": 3,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Arcachon",
+  "country": "Франція",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Biarritz",
+  "country": "Франція",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Chessy",
+  "country": "Франція",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Opéra",
+  "country": "Франція",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Orly",
+  "country": "Франція",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pont-Audemer",
+  "country": "Франція",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Sainte-Maxime",
+  "country": "Франція",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Tilly-sur-Seulles",
+  "country": "Франція",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "(місце не визначене)",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Antibes",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Beaulieu",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Beaulieu-sur-Mer",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Beauvais",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Bourg-Saint-Maurice",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Bussy-Saint-Georges",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Cannes-Écluse",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Carcassonne",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Castelnau-le-Lez",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Chamonix-Mont-Blanc",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Clermont-Ferrand",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Clichy",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Cléon",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Corsica",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Courchevel",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Fontainebleau",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Ivry-sur-Seine",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "La Haye-Malherbe",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Le Boulay-Morin",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Le Vaudreuil",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Louviers",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Marcq-en-Barœul",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Mariosa",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Millau",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Milly-la-Forêt",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Nantes",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Normandy",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Quimper",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Rungis",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Résidence Saint Pierre d'Etran",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Saint-Germain-des-Prés",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Saint-Jean-Cap-Ferrat",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Sancerre",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Serris",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Val-d'Isère",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Val-de-Reuil",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Villepinte",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Évaux-les-Bains",
+  "country": "Франція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Augsburg",
+  "country": "Німеччина",
+  "requests": 4,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Simmern",
+  "country": "Німеччина",
+  "requests": 4,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Feldkirchen",
+  "country": "Німеччина",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Gotha",
+  "country": "Німеччина",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Vaterstetten",
+  "country": "Німеччина",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Wuppertal",
+  "country": "Німеччина",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Adenau",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Aschheim",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Bremen",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Charlottenburg",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Dietzenbach",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Fürth",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Haar",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Hallbergmoos",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Hamm (Sieg)",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Hauptbahnhof",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Ladenburg",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Münster",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Oberding",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Oberhausen",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Olpe",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Osnabrück",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Rotach",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Rottach-Egern",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Unterhaching",
+  "country": "Німеччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Rethymno",
+  "country": "Греція",
+  "requests": 13,
+  "peak_agents": 7,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Polýgyros",
+  "country": "Греція",
+  "requests": 9,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Néa Potídhaia",
+  "country": "Греція",
+  "requests": 7,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Crete",
+  "country": "Греція",
+  "requests": 5,
+  "peak_agents": 3,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Néos Marmarás",
+  "country": "Греція",
+  "requests": 5,
+  "peak_agents": 3,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Ouranoupolis",
+  "country": "Греція",
+  "requests": 5,
+  "peak_agents": 4,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Níkiti",
+  "country": "Греція",
+  "requests": 4,
+  "peak_agents": 3,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Halkidiki",
+  "country": "Греція",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Kokkíni Cháni",
+  "country": "Греція",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Весна, Осінь"
+ },
+ {
+  "city": "Eloúnda",
+  "country": "Греція",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Ierápetra",
+  "country": "Греція",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Lagomandra Beach",
+  "country": "Греція",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Sitia",
+  "country": "Греція",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Stalís",
+  "country": "Греція",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Thásos",
+  "country": "Греція",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Acharávi",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Agía Paraskeví",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Agía Triáda",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Aidipsós",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Ammoudara",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Attica",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Bali",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Darátsos",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Georgioupolis",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Gouviá",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Gázi",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Gýtheio",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Ierissós",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Kalamiá",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Kassiopi",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Kipséli",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Kos",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Kávos",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Lemnos",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Litóchoro",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Loutráki",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Lárdos",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Messíni",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Metamórfosi",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Myrina",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Ornós",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Oía",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Paleokastritsa",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pefkochóri",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Piraeus",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Platamonas",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pórto Chéli",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pýlos",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pýrgos",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Santorini",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Skiáthos",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Thérmi",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Tolón",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Xylókastro",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Ágios Stéfanos",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Ágios Vasíleios",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Álimos",
+  "country": "Греція",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Abano Terme",
+  "country": "Італія",
+  "requests": 6,
+  "peak_agents": 2,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Cernobbio",
+  "country": "Італія",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Ferno",
+  "country": "Італія",
+  "requests": 3,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Obereggen",
+  "country": "Італія",
+  "requests": 3,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Orosei",
+  "country": "Італія",
+  "requests": 3,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pula",
+  "country": "Італія",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Rimini",
+  "country": "Італія",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Sardinia",
+  "country": "Італія",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Ancona",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Bardolino",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Bergamo",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Blevio",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Bressanone",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Cala Gonone",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Castelrotto",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Como",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Costa Rei",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Fiumicino",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Lazise",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Liguria",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Lipari",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pescara",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pettenasco",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Torri del Benaco",
+  "country": "Італія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Altavilla Milicia",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Amalfi Coast",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Aquileia",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Badesi",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Badia",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Bari",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Bolzano",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Camaiore",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Campitello di Fassa",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Campofelice di Roccella",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Capanne-Prato-Cinquale",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Cardano al Campo",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Cardedu",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Castel San Pietro Terme",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Castiadas",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Cefalù",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Cermes",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Crema",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Fasano",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Gargnano",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Grosseto",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Iesolo",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Is Molas",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "La Maddalena",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Lacco Ameno",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Lake Garda",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Lucca",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Malgrate",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Manciano",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Marsala",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Melissa",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Menaggio",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Montecatini-Terme",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Ortisei",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Parghelia",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pietrasanta",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pinzolo",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Pisa",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pittulongu",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Rasun Anterselva - Rasen-Antholz",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Recco",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Rho",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Ricadi",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Salerno",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "San Pietro",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "San Teodoro",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Sanremo",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Santa Domenica",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Savona",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Sicily",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Stromboli",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Turin",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Tuscany",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Udine",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Valdaora di Mezzo",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Verona",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Viareggio",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Villasimius",
+  "country": "Італія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Rzeszów",
+  "country": "Польща",
+  "requests": 11,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Kielce",
+  "country": "Польща",
+  "requests": 5,
+  "peak_agents": 4,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Modlniczka",
+  "country": "Польща",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Mokotów",
+  "country": "Польща",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Sadowie",
+  "country": "Польща",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Sopot",
+  "country": "Польща",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Starachowice",
+  "country": "Польща",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Bielany Wrocławskie",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Chrzanów",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Fryderyka Chopina",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Jarosław",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Kwidzyn",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Malbork",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Modlin",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Skarżysko-Kamienna",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Stare Miasto",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Stopnica",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Wawer",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Wąwolnica",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Władysławowo",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Zator",
+  "country": "Польща",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Funchal",
+  "country": "Португалія",
+  "requests": 8,
+  "peak_agents": 3,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Madeira",
+  "country": "Португалія",
+  "requests": 6,
+  "peak_agents": 3,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Calheta",
+  "country": "Португалія",
+  "requests": 4,
+  "peak_agents": 2,
+  "seasons": "Весна, Осінь"
+ },
+ {
+  "city": "Cascais",
+  "country": "Португалія",
+  "requests": 4,
+  "peak_agents": 2,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Lagos",
+  "country": "Португалія",
+  "requests": 3,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Algarve",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Alter do Chão",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Armação de Pêra",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Braga",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Faro",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Grândola",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Lagoa",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Loulé",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Porches",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Santa Cruz",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "São Vicente",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Vila do Bispo",
+  "country": "Португалія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Calvià",
+  "country": "Іспанія",
+  "requests": 12,
+  "peak_agents": 5,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Mallorca",
+  "country": "Іспанія",
+  "requests": 10,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Alcúdia",
+  "country": "Іспанія",
+  "requests": 5,
+  "peak_agents": 3,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Alicante",
+  "country": "Іспанія",
+  "requests": 5,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Arona",
+  "country": "Іспанія",
+  "requests": 5,
+  "peak_agents": 2,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Magaluf",
+  "country": "Іспанія",
+  "requests": 5,
+  "peak_agents": 2,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Palmanova",
+  "country": "Іспанія",
+  "requests": 5,
+  "peak_agents": 2,
+  "seasons": "Весна, Осінь"
+ },
+ {
+  "city": "Peguera",
+  "country": "Іспанія",
+  "requests": 5,
+  "peak_agents": 3,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Playa Blanca",
+  "country": "Іспанія",
+  "requests": 5,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "(місце не визначене)",
+  "country": "Іспанія",
+  "requests": 4,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Calonge",
+  "country": "Іспанія",
+  "requests": 4,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Chiclana de la Frontera",
+  "country": "Іспанія",
+  "requests": 4,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Begur",
+  "country": "Іспанія",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Costa Brava",
+  "country": "Іспанія",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Costa Dorada",
+  "country": "Іспанія",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Los Realejos",
+  "country": "Іспанія",
+  "requests": 3,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Pineda de Mar",
+  "country": "Іспанія",
+  "requests": 3,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Platja d'Aro",
+  "country": "Іспанія",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Yaiza",
+  "country": "Іспанія",
+  "requests": 3,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Cubelles",
+  "country": "Іспанія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Guía de Isora",
+  "country": "Іспанія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "La Seu d'Urgell",
+  "country": "Іспанія",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Santa Eulària des Riu",
+  "country": "Іспанія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Santa Margalida",
+  "country": "Іспанія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна, Осінь"
+ },
+ {
+  "city": "Tenerife",
+  "country": "Іспанія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Torredembarra",
+  "country": "Іспанія",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Alaró",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Alcaracejos",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Alp",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Asturias",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Avilés",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Balearic Islands",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Bellver de Cerdanya",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Berga",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Biescas",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Cadaqués",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Cala Font",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Cala Rajada",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Cala d'Or",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Calafell",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Cambrils",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Can Pastilla",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Cantabria",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Castelldefels",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Cerdanya",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Ceuta",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Conil de la Frontera",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Corvera de Asturias",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Costa Blanca",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Cunit beach",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "El Campello",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "El Cotillo",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Els Pins",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Escalante",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Espot",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Estepona",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Felanitx",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Finestrat",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Gasteiz / Vitoria",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Girona",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Gran Canaria",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "L'Hospitalet de Llobregat",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "La Molina",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Las Caldas",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Llanes",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Los Cristianos",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Los Gigantes",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Manacor",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Menorca",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Miengo",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Mijas",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Monda",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Muro del Alcoy",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Nerja",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Ordesa Valley",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Oropesa del Mar",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pals",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Parres",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pechón",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Platja de la Mota de Sant Pere",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Playa de Bahía",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Playa de Puerto Rico",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Playa de las Américas",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Port de Sóller",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Portocolom",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Pozoblanco",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Prullans",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Puente Viesgo",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Ribadeo",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Salinas",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "San Agustín",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "San Bartolomé de Tirajana",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "San Miguel De Abona",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "San Miguel de Meruelo",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "San Salvador",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Sant Maurici de la Quar",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Santander",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Santiago del Teide",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Segur de Calafell",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Ses Salines",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Son Servera",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Sort",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Soto del Barco",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Suances",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Sóller",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Tarifa",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Taüll",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Toledo",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Villajoyosa",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Villanueva de Villaescusa",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Zahara de los Atunes",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "l'Alfàs del Pi",
+  "country": "Іспанія",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Bodrum",
+  "country": "Туреччина",
+  "requests": 13,
+  "peak_agents": 5,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Serik",
+  "country": "Туреччина",
+  "requests": 10,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Manavgat",
+  "country": "Туреччина",
+  "requests": 8,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Marmaris",
+  "country": "Туреччина",
+  "requests": 6,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Milas",
+  "country": "Туреччина",
+  "requests": 4,
+  "peak_agents": 2,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Ölüdeniz",
+  "country": "Туреччина",
+  "requests": 3,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Beldibi",
+  "country": "Туреччина",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Bolaman",
+  "country": "Туреччина",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Tekirova",
+  "country": "Туреччина",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Turgutreis",
+  "country": "Туреччина",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Akyarlar",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Arnavutkoey",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Didim",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Göcek",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Güzelbağ",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Harbiye",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Kaş",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Konyaaltı",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Malatya",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Mezitli",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Nevşehir",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Ortaca",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Sarigerme",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Torba",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Yaniklar",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Çeşme",
+  "country": "Туреччина",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Mukachevo",
+  "country": "Україна",
+  "requests": 5,
+  "peak_agents": 2,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Ternopil",
+  "country": "Україна",
+  "requests": 4,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Uzhhorod",
+  "country": "Україна",
+  "requests": 4,
+  "peak_agents": 2,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Bukovel",
+  "country": "Україна",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Chernivtsi",
+  "country": "Україна",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Vinnytsya",
+  "country": "Україна",
+  "requests": 3,
+  "peak_agents": 2,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Cherkasy",
+  "country": "Україна",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Chop",
+  "country": "Україна",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Truskavets",
+  "country": "Україна",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Voronkiv",
+  "country": "Україна",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Berehove",
+  "country": "Україна",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Ivano-Frankivsk",
+  "country": "Україна",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Kharkiv",
+  "country": "Україна",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Lviv Oblast",
+  "country": "Україна",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Morshyn",
+  "country": "Україна",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Nadvirna",
+  "country": "Україна",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Poltava",
+  "country": "Україна",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Tatariv",
+  "country": "Україна",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Vyshhorod",
+  "country": "Україна",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Yaremche",
+  "country": "Україна",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Zhytomyr",
+  "country": "Україна",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Los Angeles",
+  "country": "США",
+  "requests": 4,
+  "peak_agents": 4,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Brooklyn",
+  "country": "США",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Cockeysville",
+  "country": "США",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Fort Carson",
+  "country": "США",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Fountain",
+  "country": "США",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Las Vegas",
+  "country": "США",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Miami",
+  "country": "США",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Newington",
+  "country": "США",
+  "requests": 2,
+  "peak_agents": 2,
+  "seasons": "Літо"
+ },
+ {
+  "city": "North Charleston",
+  "country": "США",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Pella",
+  "country": "США",
+  "requests": 2,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Baltimore",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Beverly Hills",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Clearwater",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Cuba City",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Dallas",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Florida",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Grand Rapids",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Hillsboro",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Hilton Head Island",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Irving",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Lancaster",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Long Island",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Newport",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Phoenix",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Portland",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "Santa Monica",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ },
+ {
+  "city": "South Beach",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Sparta",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Surfside",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Весна"
+ },
+ {
+  "city": "Tarrytown",
+  "country": "США",
+  "requests": 1,
+  "peak_agents": 1,
+  "seasons": "Осінь"
+ }
+]

@@ -1,0 +1,92 @@
+[
+ {
+  "city": "Warsaw",
+  "country": "Польща",
+  "requests": 185,
+  "bookings": 96,
+  "conversion": 0.5189,
+  "spring_status": "Сильний",
+  "summer_status": "Сильний",
+  "autumn_status": "Сильний"
+ },
+ {
+  "city": "Chisinau",
+  "country": "Молдова",
+  "requests": 136,
+  "bookings": 99,
+  "conversion": 0.7279,
+  "spring_status": "Сильний",
+  "summer_status": "Сильний",
+  "autumn_status": "Сильний"
+ },
+ {
+  "city": "Paris",
+  "country": "Франція",
+  "requests": 70,
+  "bookings": 43,
+  "conversion": 0.6143,
+  "spring_status": "Сильний",
+  "summer_status": "Сильний",
+  "autumn_status": "Сильний"
+ },
+ {
+  "city": "Vienna",
+  "country": "Австрія",
+  "requests": 64,
+  "bookings": 50,
+  "conversion": 0.7812,
+  "spring_status": "Сильний",
+  "summer_status": "Сильний",
+  "autumn_status": "Сильний"
+ },
+ {
+  "city": "Barcelona",
+  "country": "Іспанія",
+  "requests": 58,
+  "bookings": 22,
+  "conversion": 0.3793,
+  "spring_status": "Низький",
+  "summer_status": "Сильний",
+  "autumn_status": "Сильний"
+ },
+ {
+  "city": "Budapest",
+  "country": "Угорщина",
+  "requests": 56,
+  "bookings": 39,
+  "conversion": 0.6964,
+  "spring_status": "Сильний",
+  "summer_status": "Сильний",
+  "autumn_status": "Середній"
+ },
+ {
+  "city": "London",
+  "country": "Велика Британія",
+  "requests": 54,
+  "bookings": 43,
+  "conversion": 0.7963,
+  "spring_status": "Сильний",
+  "summer_status": "Сильний",
+  "autumn_status": "Сильний"
+ },
+ {
+  "city": "Lisbon",
+  "country": "Португалія",
+  "requests": 43,
+  "bookings": 27,
+  "conversion": 0.6279,
+  "spring_status": "Сильний",
+  "summer_status": "Сильний",
+  "autumn_status": "Сильний"
+ },
+ {
+  "city": "Dubai",
+  "country": "ОАЕ",
+  "requests": 39,
+  "bookings": 17,
+  "conversion": 0.4359,
+  "spring_status": "Сильний",
+  "summer_status": "Замало даних",
+  "autumn_status": "Сильний"
+ }
+]

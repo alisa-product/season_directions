@@ -1,0 +1,312 @@
+[
+ {
+  "city": "Corfu",
+  "country": "Греція",
+  "area": "Корфу",
+  "requests": 30,
+  "bookings": 3,
+  "conversion": 0.1,
+  "peak_agents": 13,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Belek",
+  "country": "Туреччина",
+  "area": "Анталійське узбережжя",
+  "requests": 29,
+  "bookings": 1,
+  "conversion": 0.0345,
+  "peak_agents": 8,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Kemer",
+  "country": "Туреччина",
+  "area": "Анталійське узбережжя",
+  "requests": 27,
+  "bookings": 4,
+  "conversion": 0.1481,
+  "peak_agents": 10,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Kassándreia",
+  "country": "Греція",
+  "area": "Халкідіки",
+  "requests": 22,
+  "bookings": 3,
+  "conversion": 0.1364,
+  "peak_agents": 8,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Antalya",
+  "country": "Туреччина",
+  "area": "Анталійське узбережжя",
+  "requests": 16,
+  "bookings": 2,
+  "conversion": 0.125,
+  "peak_agents": 7,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Ayia Napa",
+  "country": "Кіпр",
+  "area": "Айя-Напа і Протарас",
+  "requests": 16,
+  "bookings": 2,
+  "conversion": 0.125,
+  "peak_agents": 6,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Athens",
+  "country": "Греція",
+  "area": "",
+  "requests": 16,
+  "bookings": 3,
+  "conversion": 0.1875,
+  "peak_agents": 5,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Ródos",
+  "country": "Греція",
+  "area": "Родос",
+  "requests": 15,
+  "bookings": 1,
+  "conversion": 0.0667,
+  "peak_agents": 9,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Male",
+  "country": "Мальдіви",
+  "area": "Мальдіви",
+  "requests": 14,
+  "bookings": 1,
+  "conversion": 0.0714,
+  "peak_agents": 8,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Milan",
+  "country": "Італія",
+  "area": "",
+  "requests": 14,
+  "bookings": 2,
+  "conversion": 0.1429,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Rethymno",
+  "country": "Греція",
+  "area": "Крит",
+  "requests": 13,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 7,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Bodrum",
+  "country": "Туреччина",
+  "area": "Бодрум, Мармарис і Фетхіє",
+  "requests": 13,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 5,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Phuket",
+  "country": "Таїланд",
+  "area": "Пхукет і Андаманське узбережжя",
+  "requests": 12,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 6,
+  "seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Calvià",
+  "country": "Іспанія",
+  "area": "Майорка",
+  "requests": 12,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 5,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Marsa Alam",
+  "country": "Єгипет",
+  "area": "Червоне море, Єгипет",
+  "requests": 12,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 3,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Zakynthos",
+  "country": "Греція",
+  "area": "",
+  "requests": 11,
+  "bookings": 1,
+  "conversion": 0.0909,
+  "peak_agents": 6,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Khersónisos",
+  "country": "Греція",
+  "area": "Крит",
+  "requests": 11,
+  "bookings": 2,
+  "conversion": 0.1818,
+  "peak_agents": 5,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Rzeszów",
+  "country": "Польща",
+  "area": "",
+  "requests": 11,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Hurghada",
+  "country": "Єгипет",
+  "area": "Червоне море, Єгипет",
+  "requests": 11,
+  "bookings": 1,
+  "conversion": 0.0909,
+  "peak_agents": 3,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "New York City",
+  "country": "США",
+  "area": "",
+  "requests": 10,
+  "bookings": 1,
+  "conversion": 0.1,
+  "peak_agents": 8,
+  "seasons": "Весна, Осінь"
+ },
+ {
+  "city": "Alanya",
+  "country": "Туреччина",
+  "area": "Анталійське узбережжя",
+  "requests": 10,
+  "bookings": 1,
+  "conversion": 0.1,
+  "peak_agents": 5,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Fethiye",
+  "country": "Туреччина",
+  "area": "Бодрум, Мармарис і Фетхіє",
+  "requests": 10,
+  "bookings": 1,
+  "conversion": 0.1,
+  "peak_agents": 5,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Mallorca",
+  "country": "Іспанія",
+  "area": "Майорка",
+  "requests": 10,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Serik",
+  "country": "Туреччина",
+  "area": "Анталійське узбережжя",
+  "requests": 10,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Irákleion",
+  "country": "Греція",
+  "area": "Крит",
+  "requests": 9,
+  "bookings": 1,
+  "conversion": 0.1111,
+  "peak_agents": 5,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Budva",
+  "country": "Чорногорія",
+  "area": "Узбережжя Чорногорії",
+  "requests": 9,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Polýgyros",
+  "country": "Греція",
+  "area": "Халкідіки",
+  "requests": 9,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Poreč",
+  "country": "Хорватія",
+  "area": "",
+  "requests": 8,
+  "bookings": 1,
+  "conversion": 0.125,
+  "peak_agents": 5,
+  "seasons": "Літо"
+ },
+ {
+  "city": "Manavgat",
+  "country": "Туреччина",
+  "area": "Анталійське узбережжя",
+  "requests": 8,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 4,
+  "seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Funchal",
+  "country": "Португалія",
+  "area": "Мадейра",
+  "requests": 8,
+  "bookings": 0,
+  "conversion": 0.0,
+  "peak_agents": 3,
+  "seasons": "Весна, Літо"
+ },
+ {
+  "city": "Palma",
+  "country": "Іспанія",
+  "area": "Майорка",
+  "requests": 8,
+  "bookings": 1,
+  "conversion": 0.125,
+  "peak_agents": 3,
+  "seasons": "Весна, Літо, Осінь"
+ }
+]

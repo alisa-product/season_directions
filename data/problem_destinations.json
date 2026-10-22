@@ -1,0 +1,26 @@
+[
+ {
+  "city": "Sharm el-Sheikh",
+  "country": "Єгипет",
+  "requests": 46,
+  "bookings": 12,
+  "conversion": 0.2609,
+  "low_seasons": "Літо, Осінь"
+ },
+ {
+  "city": "Belek",
+  "country": "Туреччина",
+  "requests": 29,
+  "bookings": 1,
+  "conversion": 0.0345,
+  "low_seasons": "Весна, Літо, Осінь"
+ },
+ {
+  "city": "Kemer",
+  "country": "Туреччина",
+  "requests": 27,
+  "bookings": 4,
+  "conversion": 0.1481,
+  "low_seasons": "Літо, Осінь"
+ }
+]
