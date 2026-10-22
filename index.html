@@ -65,6 +65,14 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .sd-statuses { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--cds-gap-sm); color: var(--color-fg-muted); }
 .sd-statuses li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: var(--cds-gap-sm); align-items: baseline; }
 .sd-statuses .sd-chip { white-space: nowrap; }
+.sd-def--wide { grid-column: 1 / -1; display: grid; gap: var(--cds-gap-sm); }
+.sd-def--wide > p { max-width: 75ch; }
+.sd .sd-stat-table th { position: static; background: none; }
+.sd .sd-stat-table td { white-space: normal; vertical-align: top; color: var(--color-fg); line-height: 1.45; }
+.sd .sd-stat-table td:first-child { white-space: nowrap; }
+.sd .sd-stat-table td:nth-child(2) { min-width: 16rem; }
+.sd .sd-stat-table td:nth-child(3) { min-width: 11rem; }
+.sd .sd-stat-table td:nth-child(4) { min-width: 13rem; color: var(--color-fg-muted); }
 .sd-tabs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); }
 .sd-tab { font: inherit; font-size: var(--cds-font-size-body); background: none; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-sm) var(--cds-pad-md); cursor: pointer; margin-bottom: -1px; }
 .sd-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
@@ -162,13 +170,19 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
   <section class="sd-howto" id="how-to-read" aria-label="Як читати звіт">
     <div class="sd-def"><span class="sd-def-term">Запит</span><p>Один агент шукає одне місце на одну дату заїзду. Якщо агент багато разів шукає ту саму поїздку, це все одно один запит.</p></div>
     <div class="sd-def"><span class="sd-def-term">Конверсія</span><p>Броні, поділені на запити. Порівнюйте її із середньою по платформі за той самий сезон.</p></div>
-    <div class="sd-def"><span class="sd-def-term">Статус у сезоні</span>
-      <ul class="sd-statuses">
-        <li><span class="sd-chip is-strong">Сильний</span><span>на рівні середньої або вище.</span></li>
-        <li><span class="sd-chip is-average">Середній</span><span>нижче середньої, але не настільки, щоб бути низьким.</span></li>
-        <li><span class="sd-chip is-low">Низький</span><span>нижче середньої і при цьому менше її половини, або шукали 8+ агентів, а забронював щонайбільше 1 з 5.</span></li>
-        <li><span class="sd-chip is-few">Замало даних</span><span>менше 5 запитів або менше 3 агентів.</span></li>
-      </ul>
+    <div class="sd-def sd-def--wide"><span class="sd-def-term">Статус у сезоні</span>
+      <p>Статус порівнює конверсію місця із середньою конверсією всієї платформи за той самий сезон. Кожен сезон має свою середню. Для прикладу візьмемо осінь: середня конверсія <span class="dash-skeleton" data-source="seasons" data-field="conversion" data-where="season=Осінь" data-fmt="pct1">—</span>, половина середньої — <span class="dash-skeleton" data-source="seasons" data-field="half_average" data-where="season=Осінь" data-fmt="pct1">—</span>.</p>
+      <div class="sd-tablewrap">
+        <table class="sd-stat-table">
+          <thead><tr><th>Статус</th><th>Правило</th><th>Восени це</th><th>Приклад восени</th></tr></thead>
+          <tbody>
+            <tr><td><span class="sd-chip is-strong">Сильний</span></td><td>Конверсія на рівні середньої або вище.</td><td><span class="dash-skeleton" data-source="seasons" data-field="conversion" data-where="season=Осінь" data-fmt="pct1">—</span> і більше</td><td>Warsaw: <span class="dash-skeleton" data-source="season_top" data-field="conversion" data-where="city=Warsaw&amp;season=Осінь" data-fmt="pct0">—</span></td></tr>
+            <tr><td><span class="sd-chip is-average">Середній</span></td><td>Нижче середньої, але не менше її половини.</td><td>від <span class="dash-skeleton" data-source="seasons" data-field="half_average" data-where="season=Осінь" data-fmt="pct1">—</span> до <span class="dash-skeleton" data-source="seasons" data-field="conversion" data-where="season=Осінь" data-fmt="pct1">—</span></td><td>Kraków: <span class="dash-skeleton" data-source="season_top" data-field="conversion" data-where="city=Kraków&amp;season=Осінь" data-fmt="pct0">—</span></td></tr>
+            <tr><td><span class="sd-chip is-low">Низький</span></td><td>Менше половини середньої. Або нижче середньої, коли місце шукали 8+ агентів, а забронював щонайбільше 1 з 5.</td><td>менше <span class="dash-skeleton" data-source="seasons" data-field="half_average" data-where="season=Осінь" data-fmt="pct1">—</span>; або нижче <span class="dash-skeleton" data-source="seasons" data-field="conversion" data-where="season=Осінь" data-fmt="pct1">—</span>, якщо забронював щонайбільше 1 агент з 5</td><td>Bucharest: <span class="dash-skeleton" data-source="season_top" data-field="conversion" data-where="city=Bucharest&amp;season=Осінь" data-fmt="pct0">—</span>.<br>Sharm el-Sheikh: <span class="dash-skeleton" data-source="season_top" data-field="conversion" data-where="city=Sharm el-Sheikh&amp;season=Осінь" data-fmt="pct0">—</span>, але з <span class="dash-skeleton" data-source="problem_seasons" data-field="agents" data-where="city=Sharm el-Sheikh&amp;season=Осінь" data-fmt="int">—</span> агентів забронював лише <span class="dash-skeleton" data-source="problem_seasons" data-field="agents_booked" data-where="city=Sharm el-Sheikh&amp;season=Осінь" data-fmt="int">—</span>.</td></tr>
+            <tr><td><span class="sd-chip is-few">Замало даних</span></td><td>Менше 5 запитів або менше 3 агентів за сезон.</td><td>—</td><td>Статус не ставимо: одна бронь може повністю змінити картину.</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
