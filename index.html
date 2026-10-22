@@ -109,6 +109,11 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .sd-chip.is-average { color: var(--color-fg-muted); }
 .sd-chip.is-few, .sd-chip.is-none { color: var(--color-fg-muted); }
 .sd-chip.is-few::before, .sd-chip.is-none::before { background: transparent; border: 1px solid currentColor; }
+.sd { --sd-red: var(--cds-chart-status-critical, #d0523a); --sd-amber: var(--color-warn, #e0a21b); }
+.sd-sw { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 3px; margin-right: 0.4rem; vertical-align: -0.05rem; }
+.sd-sw--red { background: var(--sd-red); }
+.sd-sw--amber { background: var(--sd-amber); }
+.sd-sw--grey { background: var(--cds-chart-muted); }
 .sd-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
 .sd-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; width: max-content; }
 .sd-seg button { font: inherit; font-size: var(--cds-font-size-body); background: none; border: 0; padding: var(--cds-pad-xs) var(--cds-pad-md); color: var(--color-fg-muted); cursor: pointer; }
@@ -148,28 +153,28 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <div class="sd-kpi">
       <span class="sd-kpi-label">Запити</span>
       <span class="sd-kpi-value dash-skeleton" data-source="summary" data-field="requests" data-row="0" data-fmt="int">—</span>
-      <span class="sd-kpi-note">Весна – осінь 2026</span>
+<span class="sd-kpi-note">Скільки поїздок агенти шукали за весну, літо й осінь 2026</span>
     </div>
     <div class="sd-kpi">
       <span class="sd-kpi-label">Броні</span>
       <span class="sd-kpi-value dash-skeleton" data-source="summary" data-field="bookings" data-row="0" data-fmt="int">—</span>
-      <span class="sd-kpi-note">Унікальні замовлення за той самий період</span>
+<span class="sd-kpi-note">Скільки замовлень оформили за той самий час</span>
     </div>
     <div class="sd-kpi">
       <span class="sd-kpi-label">Конверсія</span>
       <span class="sd-kpi-value dash-skeleton" data-source="summary" data-field="conversion" data-row="0" data-fmt="pct1">—</span>
-      <span class="sd-kpi-note">Броні на запит, у середньому по платформі</span>
+<span class="sd-kpi-note">Яка частка запитів закінчилася бронюванням, у середньому по платформі</span>
     </div>
     <div class="sd-kpi">
       <span class="sd-kpi-label">Запити без броні</span>
       <span class="sd-kpi-value dash-skeleton" data-source="summary" data-field="never_share" data-row="0" data-fmt="pct1">—</span>
-      <span class="sd-kpi-note"><span class="dash-skeleton" data-source="summary" data-field="never_places" data-row="0" data-fmt="int">—</span> місць шукали, але жодного разу не забронювали</span>
+      <span class="sd-kpi-note">Стільки запитів пішло в місця, де за рік ніхто нічого не забронював. Таких місць: <span class="dash-skeleton" data-source="summary" data-field="never_places" data-row="0" data-fmt="int">—</span></span>
     </div>
   </div>
 
   <section class="sd-howto" id="how-to-read" aria-label="Як читати звіт">
-    <div class="sd-def"><span class="sd-def-term">Запит</span><p>Один агент шукає одне місце на одну дату заїзду. Якщо агент багато разів шукає ту саму поїздку, це все одно один запит.</p></div>
-    <div class="sd-def"><span class="sd-def-term">Конверсія</span><p>Броні, поділені на запити. Порівнюйте її із середньою по платформі за той самий сезон.</p></div>
+    <div class="sd-def"><span class="sd-def-term">Запит</span><p>Агент шукає житло в конкретному місці на конкретну дату заїзду. Якщо він перебирає варіанти для тієї самої поїздки багато разів, це все одно один запит.</p></div>
+    <div class="sd-def"><span class="sd-def-term">Конверсія</span><p>Яка частка запитів закінчилася бронюванням. Порівнюйте її із середньою по платформі за той самий сезон: влітку й восени вона різна.</p></div>
     <div class="sd-def sd-def--wide"><span class="sd-def-term">Статус у сезоні</span>
       <p>Статус порівнює конверсію місця із середньою конверсією всієї платформи за той самий сезон. Кожен сезон має свою середню. Для прикладу візьмемо осінь: середня конверсія <span class="dash-skeleton" data-source="seasons" data-field="conversion" data-where="season=Осінь" data-fmt="pct1">—</span>, половина середньої — <span class="dash-skeleton" data-source="seasons" data-field="half_average" data-where="season=Осінь" data-fmt="pct1">—</span>.</p>
       <div class="sd-tablewrap">
@@ -199,7 +204,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <div class="sd-card" id="card-key">
       <div class="sd-card-head">
         <h2 class="sd-card-title">Ключові напрямки</h2>
-        <p class="sd-card-note">Високий попит (верхня чверть міст за запитами) і сильна конверсія щонайменше у двох сезонах. <span class="sd-ask">Що просити: кращі ціни за обсяг, який ми вже приносимо.</span></p>
+        <p class="sd-card-note">Міста з чверті найпопулярніших за запитами, які до того ж добре бронюють, і так щонайменше у двох сезонах. <span class="sd-ask">Що просити в постачальників: кращі ціни за обсяг, який ми їм уже приносимо.</span></p>
       </div>
       <div class="sd-tablewrap">
         <table id="t-key" data-source="key_destinations" data-row-key="city">
@@ -221,7 +226,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <div class="sd-card" id="card-problem">
       <div class="sd-card-head">
         <h2 class="sd-card-title">Проблемні напрямки</h2>
-        <p class="sd-card-note">Низька конверсія у двох сезонах або більше (принаймні в одному з них 10+ запитів) і жодного разу не сильна. <span class="sd-ask">Що просити: нижчі ціни або більше наявності.</span></p>
+        <p class="sd-card-note">Міста, де бронюють погано щонайменше у двох сезонах і жодного разу не бронювали добре. Щоб не реагувати на випадковість, хоча б в одному з цих сезонів має бути 10+ запитів. <span class="sd-ask">Що просити: нижчі ціни або більше готелів у наявності.</span></p>
       </div>
       <p class="sd-fact">Шарм-ель-Шейх восени: шукали <span class="dash-skeleton" data-source="problem_seasons" data-field="agents" data-where="city=Sharm el-Sheikh&amp;season=Осінь" data-fmt="int">—</span> агентів, забронювали <span class="dash-skeleton" data-source="problem_seasons" data-field="agents_booked" data-where="city=Sharm el-Sheikh&amp;season=Осінь" data-fmt="int">—</span>.</p>
       <div class="sd-tablewrap">
@@ -237,7 +242,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
           <tbody></tbody>
         </table>
       </div>
-      <p class="sd-card-note">За сезонами. Кожного агента враховано один раз за сезон.</p>
+      <p class="sd-card-note">Ті самі міста по сезонах. Кожного агента рахуємо один раз за сезон, скільки б разів він не шукав.</p>
       <div class="sd-tablewrap">
         <table id="t-problem-seasons" data-source="problem_seasons" data-row-key="city,season">
           <thead><tr>
@@ -259,7 +264,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <div class="sd-card" id="card-seasonal">
       <div class="sd-card-head">
         <h2 class="sd-card-title">Сезонні напрямки</h2>
-        <p class="sd-card-note">Низька конверсія в одному сезоні за 10+ запитів і жодного разу не сильна. Історії поки замало, щоб називати це проблемою на весь рік. <span class="sd-ask">Що просити: ціни на цей сезон заздалегідь, до наступного року.</span></p>
+        <p class="sd-card-note">Міста, де погано бронювали лише в одному сезоні (при 10+ запитах), а в інших сезонах добрих результатів теж не було або даних замало. Щоб назвати це постійною проблемою, історії поки не вистачає. <span class="sd-ask">Що просити: ціни на цей сезон заздалегідь, до наступного року.</span></p>
       </div>
       <div class="sd-tablewrap">
         <table id="t-seasonal" data-source="seasonal_destinations" data-row-key="city">
@@ -285,7 +290,8 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <div class="sd-card" id="card-countries">
       <div class="sd-card-head">
         <h2 class="sd-card-title">Конверсія за країнами</h2>
-        <p class="sd-card-note">Країни, де за рік було 25+ запитів. Виділено стовпці нижче середньої по платформі; пунктир — середня.</p>
+        <p class="sd-card-note">Яка частка запитів у кожній країні закінчилася бронюванням. Показані країни, де за рік було щонайменше 25 запитів; пунктир — середнє по платформі. Колір показує, де бронюють гірше за середнє й варто шукати кращих постачальників, ціни або контент.</p>
+        <div class="sd-legend"><span><i class="sd-sw sd-sw--red"></i>більш ніж удвічі гірше за середнє</span><span><i class="sd-sw sd-sw--amber"></i>гірше за середнє</span><span><i class="sd-sw sd-sw--grey"></i>на рівні середнього або краще</span></div>
       </div>
       <div class="sd-chart dash-skeleton" id="country-chart" data-source="countries summary"></div>
     </div>
@@ -293,7 +299,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <div class="sd-card" id="card-areas">
       <div class="sd-card-head">
         <h2 class="sd-card-title">Курортні регіони</h2>
-        <p class="sd-card-note">Агенти шукають сусідні курортні селища окремо, і через це не видно, скільки попиту має регіон загалом. Тут їх складено разом. Групування наше.</p>
+        <p class="sd-card-note">Агенти шукають курорти по окремих селищах, наприклад Белек, Кемер чи Сіде, тож попит розпорошується і здається меншим, ніж є. Тут сусідні селища зведені в один регіон, щоб було видно справжній обсяг. Регіони ми склали самі.</p>
       </div>
       <div class="sd-tablewrap">
         <table id="t-areas" data-source="resort_areas" data-row-key="area">
@@ -314,7 +320,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <div class="sd-card" id="card-places">
       <div class="sd-card-head">
         <h2 class="sd-card-title">Шукають, але майже не бронюють</h2>
-        <p class="sd-card-note">8+ запитів за рік, 3+ агенти хоча б в одному сезоні і конверсія менше половини середньої по платформі за рік. Цей список рахується за рік, а проблемні напрямки на вкладці «Переговори про ціну» — посезонно, тому списки можуть відрізнятися: наприклад, Шарм-ель-Шейх за рік має конверсію вище цього порогу, але двічі був низьким у своєму сезоні. Агентів не можна складати між сезонами, тому в колонці агентів наведено найактивніший сезон.</p>
+        <p class="sd-card-note">Місця, які за рік шукали щонайменше 8 разів (і щонайменше 3 різні агенти за сезон), але бронювали більш ніж удвічі рідше за середнє по платформі. Цей список рахується за весь рік, а проблемні напрямки на першій вкладці — по кожному сезону окремо, тому списки можуть відрізнятися. Наприклад, Шарм-ель-Шейх за рік бронюють не так погано, але у двох сезонах окремо він був низьким. «Агентів у піковий сезон» — скільки різних агентів шукали місце в найактивнішому сезоні: між сезонами агентів не складаємо, бо це можуть бути ті самі люди.</p>
       </div>
       <input class="sd-search" id="places-search" type="search" placeholder="Фільтр за місцем, країною або регіоном" aria-label="Фільтр місць">
       <div class="sd-tablewrap sd-tall">
@@ -337,8 +343,8 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <div class="sd-card" id="card-tail">
       <div class="sd-card-head">
         <h2 class="sd-card-title">Довгий хвіст</h2>
-        <p class="sd-card-note"><span class="dash-skeleton" data-source="summary" data-field="never_places" data-row="0" data-fmt="int">—</span> місць шукали, але не забронювали в жодному сезоні: це <span class="dash-skeleton" data-source="summary" data-field="never_requests" data-row="0" data-fmt="int">—</span> запитів, або <span class="dash-skeleton" data-source="summary" data-field="never_share" data-row="0" data-fmt="pct1">—</span> усього попиту. Кожне місце окремо мале, але разом це третина того, що шукають агенти.</p>
-        <p class="sd-card-note">Це не країни без броней: у кожній країні нижче бронюють (див. «Броні по країні»). Мова про окремі місця всередині країни, де за рік не було жодної броні. Натисніть на країну, щоб побачити ці місця.</p>
+        <p class="sd-card-note"><span class="dash-skeleton" data-source="summary" data-field="never_places" data-row="0" data-fmt="int">—</span> місць агенти шукали, але за весь рік жодного разу не забронювали. На них припало <span class="dash-skeleton" data-source="summary" data-field="never_requests" data-row="0" data-fmt="int">—</span> запитів, тобто <span class="dash-skeleton" data-source="summary" data-field="never_share" data-row="0" data-fmt="pct1">—</span> усього попиту. Поодинці кожне таке місце дрібне, але разом це третина всього, що шукають агенти.</p>
+        <p class="sd-card-note">Важливо: у цих країнах бронюють, дивіться колонку «Броні по країні». Мова лише про окремі міста й селища всередині країни, де броней не було. Натисніть на назву країни, щоб побачити список цих місць.</p>
       </div>
       <div class="sd-tablewrap">
         <table id="t-tail" data-source="long_tail" data-row-key="country">
@@ -381,7 +387,7 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <div class="sd-card" id="card-season-top">
       <div class="sd-card-head">
         <h2 class="sd-card-title">Найзатребуваніші напрямки</h2>
-        <p class="sd-card-note">Топ-15 за запитами за сезон. Конверсія може перевищувати 100%, якщо агенти бронюють місце без відстеженого пошуку, наприклад під час повторної броні.</p>
+        <p class="sd-card-note">15 місць, які найчастіше шукали в цьому сезоні. Іноді конверсія більша за 100%: так буває, коли агенти бронюють місце без пошуку на платформі, наприклад повторно для постійного клієнта.</p>
       </div>
       <div class="sd-tablewrap">
         <table id="t-season" data-source="season_top" data-row-key="season,city">
@@ -664,7 +670,7 @@ window.dash = (() => {
     const bars = svg.append('g').selectAll('rect').data(data).join('rect')
       .attr('x', left).attr('y', (d) => y(d.country)).attr('height', y.bandwidth())
       .attr('width', (d) => Math.max(1, x(d.conversion) - left)).attr('rx', 4)
-      .style('fill', (d) => (d.conversion < avg ? dash.colors[0] : 'var(--cds-chart-muted)'));
+      .style('fill', (d) => (d.conversion < avg / 2 ? 'var(--sd-red)' : d.conversion < avg ? 'var(--sd-amber)' : 'var(--cds-chart-muted)'));
 
     svg.append('g').selectAll('text').data(data).join('text')
       .attr('x', (d) => x(d.conversion) + 6).attr('y', (d) => y(d.country) + y.bandwidth() / 2).attr('dy', '0.35em')
